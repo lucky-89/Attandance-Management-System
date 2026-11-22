@@ -38,13 +38,13 @@ fun ModeScreen(vm: AppVm) {
     Frame("How will your firm use the app?", "Choose once; you can change it later from More.") {
         Section("Share with my team (recommended)") {
             Note("Everyone signs in on their own phone; attendance, leave and approvals are shared through your free Supabase project. " +
-                "Paste its Project URL and anon (public) key from Supabase › Project Settings › API.")
+                "Paste its Project URL and its publishable (or legacy anon) key from Supabase › Project Settings › API Keys.")
             Field("Project URL (https://….supabase.co)", url, { url = it })
-            Field("anon public key", key, { key = it }, minLines = 2)
+            Field("Publishable key (sb_publishable_…) or anon key (eyJ…)", key, { key = it }, minLines = 2)
             Button(onClick = {
                 when {
                     !Regex("^https://[^\\s/]+").containsMatchIn(url.trim()) -> vm.say("The Project URL starts with https:// and ends with .supabase.co.")
-                    key.trim().length < 30 -> vm.say("Paste the whole anon public key — it is a long text starting with eyJ.")
+                    key.trim().length < 30 -> vm.say("Paste the whole key — it starts with sb_publishable_ or eyJ.")
                     else -> { vm.hr.cloud.url = url; vm.hr.cloud.anonKey = key; vm.hr.cloud.mode = "cloud"; vm.hr.restart() }
                 }
             }, modifier = Modifier.fillMaxWidth()) { Text("Connect") }

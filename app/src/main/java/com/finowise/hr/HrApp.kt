@@ -44,7 +44,13 @@ class HrApp : Application() {
 
     /** After the mode or the project changes: start again cleanly. */
     fun restart() {
-        startActivity(Intent(this, MainActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK))
+        // Settings are written synchronously (commit) before this is called. Relaunch through the
+        // alarm service as well as directly, so the app comes back even where a direct start is held back.
+        val intent = Intent(this, MainActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        val pi = android.app.PendingIntent.getActivity(this, 7, intent,
+            android.app.PendingIntent.FLAG_IMMUTABLE or android.app.PendingIntent.FLAG_CANCEL_CURRENT)
+        (getSystemService(ALARM_SERVICE) as android.app.AlarmManager).set(android.app.AlarmManager.RTC, System.currentTimeMillis() + 400, pi)
+        startActivity(intent)
         Runtime.getRuntime().exit(0)
     }
 

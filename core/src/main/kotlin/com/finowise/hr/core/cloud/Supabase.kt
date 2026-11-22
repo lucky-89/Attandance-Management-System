@@ -51,7 +51,9 @@ class SupabaseApi(baseUrl: String, private val anonKey: String, private val toke
             requestMethod = method
             connectTimeout = 15_000; readTimeout = 30_000
             setRequestProperty("apikey", anonKey)
-            setRequestProperty("Authorization", "Bearer " + ((if (auth) tokens.load()?.access else null) ?: anonKey))
+            // A signed-in user's token goes in Authorization; the project key only ever goes in "apikey"
+            // (new sb_publishable_ keys are not accepted as a Bearer token, legacy anon keys work either way).
+            (if (auth) tokens.load()?.access else null)?.let { setRequestProperty("Authorization", "Bearer $it") }
             setRequestProperty("Content-Type", "application/json")
             setRequestProperty("Accept", "application/json")
             headers.forEach { (k, v) -> setRequestProperty(k, v) }

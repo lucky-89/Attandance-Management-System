@@ -13,7 +13,7 @@ android {
         minSdk = 26
         targetSdk = 35
         versionCode = (System.getenv("GITHUB_RUN_NUMBER") ?: "1").toInt()
-        versionName = System.getenv("APP_VERSION") ?: "1.1.0"
+        versionName = System.getenv("APP_VERSION") ?: "1.1.1"
         // Your Supabase project, baked in at build time (GitHub secrets SUPABASE_URL / SUPABASE_ANON_KEY,
         // or gradle.properties). Left blank, the app asks for them on first launch.
         fun cfg(name: String) = (System.getenv(name) ?: (project.findProperty(name) as String?) ?: "").trim()

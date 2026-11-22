@@ -24,12 +24,12 @@ Free projects send a few confirmation emails an hour; for a big team, add your o
 under **Authentication → Emails → SMTP Settings**, or switch confirmation off while testing.
 
 ## 4. Copy the two connection values
-Left menu → **Project Settings** → **API** (or **Data API**):
-- **Project URL** — like `https://abcdxyz.supabase.co`
-- **anon public** key — a long text starting with `eyJ…`
+- **Project URL** — on the project's home page, like `https://abcdxyz.supabase.co`
+- **Publishable key** — **Project Settings → API Keys**, starts with `sb_publishable_…`
+  (the older **anon public** key under *Legacy API Keys*, starting with `eyJ…`, works too)
 
-(The anon key is meant to be public; the rules in `schema.sql` decide what each person may do.
-Never put the **service_role** key in the app.)
+(This key is meant to be public; the rules in `schema.sql` decide what each person may do.
+Never put a **secret** / **service_role** key in the app.)
 
 ## 5. Put them in the app — choose one
 - **Easiest:** install the APK, choose **Share with my team**, paste the URL and key.

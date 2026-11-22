@@ -17,13 +17,13 @@ class CloudPrefs(context: Context) : TokenStore {
     /** "cloud", "local", or null until somebody chooses. A build with a project baked in starts in cloud mode. */
     var mode: String?
         get() = p.getString("mode", null) ?: if (BuildConfig.SUPABASE_URL.isNotBlank()) "cloud" else null
-        set(v) { p.edit().putString("mode", v).apply() }
+        set(v) { p.edit().putString("mode", v).commit() }
     var url: String
         get() = p.getString("url", null)?.takeIf { it.isNotBlank() } ?: BuildConfig.SUPABASE_URL
-        set(v) { p.edit().putString("url", v.trim()).apply() }
+        set(v) { p.edit().putString("url", v.trim()).commit() }
     var anonKey: String
         get() = p.getString("key", null)?.takeIf { it.isNotBlank() } ?: BuildConfig.SUPABASE_ANON_KEY
-        set(v) { p.edit().putString("key", v.trim()).apply() }
+        set(v) { p.edit().putString("key", v.trim()).commit() }
 
     override fun load(): Tokens? = p.getString("tokens", null)?.let { runCatching { JSON.decodeFromString(Tokens.serializer(), it) }.getOrNull() }
     override fun save(t: Tokens?) { p.edit().apply { if (t == null) remove("tokens") else putString("tokens", JSON.encodeToString(Tokens.serializer(), t)) }.commit() }
