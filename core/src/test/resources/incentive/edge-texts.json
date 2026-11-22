@@ -1,0 +1,616 @@
+{
+ "edges": [
+  {
+   "saved": {},
+   "stream": "netSales",
+   "band": 0,
+   "from": "2000000  [CTC × 5]",
+   "to": "2800000  [CTC × 7]"
+  },
+  {
+   "saved": {},
+   "stream": "netSales",
+   "band": 1,
+   "from": "2800001  [CTC × 7 + 1]",
+   "to": "4000000  [CTC × 10]"
+  },
+  {
+   "saved": {},
+   "stream": "netSales",
+   "band": 2,
+   "from": "4000001  [CTC × 10 + 1]",
+   "to": "99999999"
+  },
+  {
+   "saved": {},
+   "stream": "freshSip",
+   "band": 0,
+   "from": "66667  [monthly salary × 2]",
+   "to": "133333  [monthly salary × 4]"
+  },
+  {
+   "saved": {},
+   "stream": "freshSip",
+   "band": 1,
+   "from": "133334  [monthly salary × 4 + 1]",
+   "to": "200000  [monthly salary × 6]"
+  },
+  {
+   "saved": {},
+   "stream": "freshSip",
+   "band": 2,
+   "from": "200001  [monthly salary × 6 + 1]",
+   "to": "9999999"
+  },
+  {
+   "saved": {},
+   "stream": "meetings",
+   "band": 0,
+   "from": "25",
+   "to": "40"
+  },
+  {
+   "saved": {},
+   "stream": "meetings",
+   "band": 1,
+   "from": "41",
+   "to": "75"
+  },
+  {
+   "saved": {},
+   "stream": "meetings",
+   "band": 2,
+   "from": "76",
+   "to": "9999"
+  },
+  {
+   "saved": {},
+   "stream": "newClients",
+   "band": 0,
+   "from": "6",
+   "to": "10"
+  },
+  {
+   "saved": {},
+   "stream": "newClients",
+   "band": 1,
+   "from": "11",
+   "to": "15"
+  },
+  {
+   "saved": {},
+   "stream": "newClients",
+   "band": 2,
+   "from": "16",
+   "to": "9999"
+  },
+  {
+   "saved": {},
+   "stream": "callLogs",
+   "band": 0,
+   "from": "251",
+   "to": "500"
+  },
+  {
+   "saved": {},
+   "stream": "callLogs",
+   "band": 1,
+   "from": "501",
+   "to": "750"
+  },
+  {
+   "saved": {},
+   "stream": "callLogs",
+   "band": 2,
+   "from": "751",
+   "to": "9999"
+  },
+  {
+   "saved": {},
+   "stream": "lifeInsurance",
+   "band": 0,
+   "from": "10000",
+   "to": "50000"
+  },
+  {
+   "saved": {},
+   "stream": "lifeInsurance",
+   "band": 1,
+   "from": "50001",
+   "to": "100000"
+  },
+  {
+   "saved": {},
+   "stream": "lifeInsurance",
+   "band": 2,
+   "from": "100001",
+   "to": "9999999"
+  },
+  {
+   "saved": {},
+   "stream": "healthInsurance",
+   "band": 0,
+   "from": "10000",
+   "to": "30000"
+  },
+  {
+   "saved": {},
+   "stream": "healthInsurance",
+   "band": 1,
+   "from": "30001",
+   "to": "100000"
+  },
+  {
+   "saved": {},
+   "stream": "healthInsurance",
+   "band": 2,
+   "from": "100001",
+   "to": "9999999"
+  },
+  {
+   "saved": {},
+   "stream": "extra",
+   "band": 0,
+   "from": "600001  [CTC × 1.5 + 0.5]",
+   "to": ""
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "netSales",
+   "band": 0,
+   "from": "2625000  [CTC × 5]",
+   "to": "3675000  [CTC × 7]"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "netSales",
+   "band": 1,
+   "from": "3675001  [CTC × 7 + 1]",
+   "to": "5250000  [CTC × 10]"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "netSales",
+   "band": 2,
+   "from": "5250001  [CTC × 10 + 1]",
+   "to": "99999999"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "freshSip",
+   "band": 0,
+   "from": "87500  [monthly salary × 2]",
+   "to": "175000  [monthly salary × 4]"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "freshSip",
+   "band": 1,
+   "from": "175001  [monthly salary × 4 + 1]",
+   "to": "262500  [monthly salary × 6]"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "freshSip",
+   "band": 2,
+   "from": "262501  [monthly salary × 6 + 1]",
+   "to": "9999999"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "meetings",
+   "band": 0,
+   "from": "25",
+   "to": "40"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "meetings",
+   "band": 1,
+   "from": "41",
+   "to": "75"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "meetings",
+   "band": 2,
+   "from": "76",
+   "to": "9999"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "newClients",
+   "band": 0,
+   "from": "6",
+   "to": "10"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "newClients",
+   "band": 1,
+   "from": "11",
+   "to": "15"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "newClients",
+   "band": 2,
+   "from": "16",
+   "to": "9999"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "callLogs",
+   "band": 0,
+   "from": "251",
+   "to": "500"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "callLogs",
+   "band": 1,
+   "from": "501",
+   "to": "750"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "callLogs",
+   "band": 2,
+   "from": "751",
+   "to": "9999"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "lifeInsurance",
+   "band": 0,
+   "from": "10000",
+   "to": "50000"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "lifeInsurance",
+   "band": 1,
+   "from": "50001",
+   "to": "100000"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "lifeInsurance",
+   "band": 2,
+   "from": "100001",
+   "to": "9999999"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "healthInsurance",
+   "band": 0,
+   "from": "10000",
+   "to": "30000"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "healthInsurance",
+   "band": 1,
+   "from": "30001",
+   "to": "100000"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "healthInsurance",
+   "band": 2,
+   "from": "100001",
+   "to": "9999999"
+  },
+  {
+   "saved": {
+    "slabCtc": 525000
+   },
+   "stream": "extra",
+   "band": 0,
+   "from": "787501  [CTC × 1.5 + 0.5]",
+   "to": ""
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "netSales",
+   "band": 0,
+   "from": "617285  [CTC × 5]",
+   "to": "864199  [CTC × 7]"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "netSales",
+   "band": 1,
+   "from": "864200  [CTC × 7 + 1]",
+   "to": "1234570  [CTC × 10]"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "netSales",
+   "band": 2,
+   "from": "1234571  [CTC × 10 + 1]",
+   "to": "99999999"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "freshSip",
+   "band": 0,
+   "from": "20576  [monthly salary × 2]",
+   "to": "41152  [monthly salary × 4]"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "freshSip",
+   "band": 1,
+   "from": "41153  [monthly salary × 4 + 1]",
+   "to": "61729  [monthly salary × 6]"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "freshSip",
+   "band": 2,
+   "from": "61730  [monthly salary × 6 + 1]",
+   "to": "9999999"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "meetings",
+   "band": 0,
+   "from": "25",
+   "to": "40"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "meetings",
+   "band": 1,
+   "from": "41",
+   "to": "75"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "meetings",
+   "band": 2,
+   "from": "76",
+   "to": "9999"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "newClients",
+   "band": 0,
+   "from": "6",
+   "to": "10"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "newClients",
+   "band": 1,
+   "from": "11",
+   "to": "15"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "newClients",
+   "band": 2,
+   "from": "16",
+   "to": "9999"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "callLogs",
+   "band": 0,
+   "from": "251",
+   "to": "500"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "callLogs",
+   "band": 1,
+   "from": "501",
+   "to": "750"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "callLogs",
+   "band": 2,
+   "from": "751",
+   "to": "9999"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "lifeInsurance",
+   "band": 0,
+   "from": "10000",
+   "to": "50000"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "lifeInsurance",
+   "band": 1,
+   "from": "50001",
+   "to": "100000"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "lifeInsurance",
+   "band": 2,
+   "from": "100001",
+   "to": "9999999"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "healthInsurance",
+   "band": 0,
+   "from": "10000",
+   "to": "30000"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "healthInsurance",
+   "band": 1,
+   "from": "30001",
+   "to": "100000"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "healthInsurance",
+   "band": 2,
+   "from": "100001",
+   "to": "9999999"
+  },
+  {
+   "saved": {
+    "slabCtc": 123457
+   },
+   "stream": "extra",
+   "band": 0,
+   "from": "185186  [CTC × 1.5 + 0.5]",
+   "to": ""
+  }
+ ],
+ "money": [
+  {
+   "n": 0,
+   "text": "₹0"
+  },
+  {
+   "n": -0.4,
+   "text": "₹-0"
+  },
+  {
+   "n": 0.5,
+   "text": "₹1"
+  },
+  {
+   "n": -0.5,
+   "text": "₹-0"
+  },
+  {
+   "n": 1.5,
+   "text": "₹2"
+  },
+  {
+   "n": -1.5,
+   "text": "₹-1"
+  },
+  {
+   "n": 999.49,
+   "text": "₹999"
+  },
+  {
+   "n": 1000,
+   "text": "₹1,000"
+  },
+  {
+   "n": 99999.5,
+   "text": "₹1,00,000"
+  },
+  {
+   "n": 123456789,
+   "text": "₹12,34,56,789"
+  },
+  {
+   "n": -1234567.6,
+   "text": "₹-12,34,568"
+  },
+  {
+   "n": 1000000000000000,
+   "text": "₹1,00,00,00,00,00,00,000"
+  },
+  {
+   "n": 2.5,
+   "text": "₹3"
+  },
+  {
+   "n": 18125,
+   "text": "₹18,125"
+  },
+  {
+   "n": 3924.999,
+   "text": "₹3,925"
+  }
+ ]
+}

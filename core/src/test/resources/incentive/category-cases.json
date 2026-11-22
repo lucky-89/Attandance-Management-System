@@ -1,0 +1,408 @@
+[
+ {
+  "saved": null,
+  "person": {
+   "id": "P1",
+   "name": "Asha",
+   "role": "Relationship Executive",
+   "department": "Wealth",
+   "ctc": 360000
+  },
+  "category": "nonSales",
+  "why": "no sales rule matches them",
+  "label": "Non-sales",
+  "byId": "nonSales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": null,
+  "person": {
+   "id": "P2",
+   "name": "Ravi",
+   "role": "  relationship   executive ",
+   "department": "Ops",
+   "ctc": 480000
+  },
+  "category": "nonSales",
+  "why": "no sales rule matches them",
+  "label": "Non-sales",
+  "byId": "nonSales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": null,
+  "person": {
+   "id": "P3",
+   "name": "Mina",
+   "role": "Analyst",
+   "department": " sales desk",
+   "ctc": 500000
+  },
+  "category": "nonSales",
+  "why": "no sales rule matches them",
+  "label": "Non-sales",
+  "byId": "nonSales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": null,
+  "person": {
+   "id": "P4",
+   "name": "Om",
+   "role": "Relationship Executive",
+   "department": "Wealth",
+   "ctc": 300000,
+   "incentiveCategory": "nonSales"
+  },
+  "category": "nonSales",
+  "why": "set on this account",
+  "label": "Non-sales",
+  "byId": "nonSales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": null,
+  "person": {
+   "id": "P5",
+   "name": "Lata",
+   "role": "Accountant",
+   "department": "Finance",
+   "ctc": 0,
+   "incentiveCategory": "sales"
+  },
+  "category": "sales",
+  "why": "set on this account",
+  "label": "Sales",
+  "byId": "sales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": null,
+  "person": {
+   "id": "P6",
+   "name": "Noor",
+   "role": "",
+   "department": "",
+   "ctc": 240000,
+   "incentiveCategory": "bogus"
+  },
+  "category": "nonSales",
+  "why": "no sales rule matches them",
+  "label": "Non-sales",
+  "byId": "nonSales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": null,
+  "person": {
+   "id": "P7",
+   "name": "Zed"
+  },
+  "category": "nonSales",
+  "why": "no sales rule matches them",
+  "label": "Non-sales",
+  "byId": "nonSales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": {
+   "salesRoles": [
+    "Relationship Executive"
+   ],
+   "salesDepartments": [
+    "Sales Desk",
+    "Wealth"
+   ]
+  },
+  "person": {
+   "id": "P1",
+   "name": "Asha",
+   "role": "Relationship Executive",
+   "department": "Wealth",
+   "ctc": 360000
+  },
+  "category": "sales",
+  "why": "their role, Relationship Executive",
+  "label": "Sales",
+  "byId": "sales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": {
+   "salesRoles": [
+    "Relationship Executive"
+   ],
+   "salesDepartments": [
+    "Sales Desk",
+    "Wealth"
+   ]
+  },
+  "person": {
+   "id": "P2",
+   "name": "Ravi",
+   "role": "  relationship   executive ",
+   "department": "Ops",
+   "ctc": 480000
+  },
+  "category": "sales",
+  "why": "their role,   relationship   executive ",
+  "label": "Sales",
+  "byId": "sales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": {
+   "salesRoles": [
+    "Relationship Executive"
+   ],
+   "salesDepartments": [
+    "Sales Desk",
+    "Wealth"
+   ]
+  },
+  "person": {
+   "id": "P3",
+   "name": "Mina",
+   "role": "Analyst",
+   "department": " sales desk",
+   "ctc": 500000
+  },
+  "category": "sales",
+  "why": "their department,  sales desk",
+  "label": "Sales",
+  "byId": "sales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": {
+   "salesRoles": [
+    "Relationship Executive"
+   ],
+   "salesDepartments": [
+    "Sales Desk",
+    "Wealth"
+   ]
+  },
+  "person": {
+   "id": "P4",
+   "name": "Om",
+   "role": "Relationship Executive",
+   "department": "Wealth",
+   "ctc": 300000,
+   "incentiveCategory": "nonSales"
+  },
+  "category": "nonSales",
+  "why": "set on this account",
+  "label": "Non-sales",
+  "byId": "nonSales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": {
+   "salesRoles": [
+    "Relationship Executive"
+   ],
+   "salesDepartments": [
+    "Sales Desk",
+    "Wealth"
+   ]
+  },
+  "person": {
+   "id": "P5",
+   "name": "Lata",
+   "role": "Accountant",
+   "department": "Finance",
+   "ctc": 0,
+   "incentiveCategory": "sales"
+  },
+  "category": "sales",
+  "why": "set on this account",
+  "label": "Sales",
+  "byId": "sales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": {
+   "salesRoles": [
+    "Relationship Executive"
+   ],
+   "salesDepartments": [
+    "Sales Desk",
+    "Wealth"
+   ]
+  },
+  "person": {
+   "id": "P6",
+   "name": "Noor",
+   "role": "",
+   "department": "",
+   "ctc": 240000,
+   "incentiveCategory": "bogus"
+  },
+  "category": "nonSales",
+  "why": "no sales rule matches them",
+  "label": "Non-sales",
+  "byId": "nonSales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": {
+   "salesRoles": [
+    "Relationship Executive"
+   ],
+   "salesDepartments": [
+    "Sales Desk",
+    "Wealth"
+   ]
+  },
+  "person": {
+   "id": "P7",
+   "name": "Zed"
+  },
+  "category": "nonSales",
+  "why": "no sales rule matches them",
+  "label": "Non-sales",
+  "byId": "nonSales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": {
+   "salesRoles": [],
+   "salesDepartments": [
+    "ops"
+   ]
+  },
+  "person": {
+   "id": "P1",
+   "name": "Asha",
+   "role": "Relationship Executive",
+   "department": "Wealth",
+   "ctc": 360000
+  },
+  "category": "nonSales",
+  "why": "no sales rule matches them",
+  "label": "Non-sales",
+  "byId": "nonSales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": {
+   "salesRoles": [],
+   "salesDepartments": [
+    "ops"
+   ]
+  },
+  "person": {
+   "id": "P2",
+   "name": "Ravi",
+   "role": "  relationship   executive ",
+   "department": "Ops",
+   "ctc": 480000
+  },
+  "category": "sales",
+  "why": "their department, Ops",
+  "label": "Sales",
+  "byId": "sales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": {
+   "salesRoles": [],
+   "salesDepartments": [
+    "ops"
+   ]
+  },
+  "person": {
+   "id": "P3",
+   "name": "Mina",
+   "role": "Analyst",
+   "department": " sales desk",
+   "ctc": 500000
+  },
+  "category": "nonSales",
+  "why": "no sales rule matches them",
+  "label": "Non-sales",
+  "byId": "nonSales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": {
+   "salesRoles": [],
+   "salesDepartments": [
+    "ops"
+   ]
+  },
+  "person": {
+   "id": "P4",
+   "name": "Om",
+   "role": "Relationship Executive",
+   "department": "Wealth",
+   "ctc": 300000,
+   "incentiveCategory": "nonSales"
+  },
+  "category": "nonSales",
+  "why": "set on this account",
+  "label": "Non-sales",
+  "byId": "nonSales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": {
+   "salesRoles": [],
+   "salesDepartments": [
+    "ops"
+   ]
+  },
+  "person": {
+   "id": "P5",
+   "name": "Lata",
+   "role": "Accountant",
+   "department": "Finance",
+   "ctc": 0,
+   "incentiveCategory": "sales"
+  },
+  "category": "sales",
+  "why": "set on this account",
+  "label": "Sales",
+  "byId": "sales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": {
+   "salesRoles": [],
+   "salesDepartments": [
+    "ops"
+   ]
+  },
+  "person": {
+   "id": "P6",
+   "name": "Noor",
+   "role": "",
+   "department": "",
+   "ctc": 240000,
+   "incentiveCategory": "bogus"
+  },
+  "category": "nonSales",
+  "why": "no sales rule matches them",
+  "label": "Non-sales",
+  "byId": "nonSales",
+  "missing": "nonSales"
+ },
+ {
+  "saved": {
+   "salesRoles": [],
+   "salesDepartments": [
+    "ops"
+   ]
+  },
+  "person": {
+   "id": "P7",
+   "name": "Zed"
+  },
+  "category": "nonSales",
+  "why": "no sales rule matches them",
+  "label": "Non-sales",
+  "byId": "nonSales",
+  "missing": "nonSales"
+ }
+]

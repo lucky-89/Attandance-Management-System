@@ -1,0 +1,4321 @@
+[
+ {
+  "op": "set",
+  "args": [
+   "slabBase",
+   "individual"
+  ],
+  "saved": {
+   "source": "RE Incentive Template - Ver 2",
+   "slabCtc": 400000,
+   "slabBase": "individual",
+   "pointValue": null,
+   "productCredit": [
+    {
+     "cat": "Mutual Fund",
+     "sub": "Equity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Hybrid",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Multi Asset",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "SIF",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Index Fund",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "FOF",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Debt",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Equity",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Debt",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "AIF",
+     "sub": "",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "Stocks Advisory",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "IMPS",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Corporate FD",
+     "sub": "Corporate FD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Bonds",
+     "sub": "Bonds",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "NCD",
+     "sub": "NCD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Structured Product",
+     "sub": "Structured Product",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "LAS",
+     "sub": "Loans Against MF",
+     "weight": 0.5,
+     "factor": 0.5
+    }
+   ],
+   "insuranceCredit": [
+    {
+     "cat": "Life",
+     "sub": "Term Plan",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Endowment",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Annuity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Money Back",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "ULIP",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Health",
+     "sub": "Health",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "General",
+     "sub": "General",
+     "weight": 1,
+     "factor": 1
+    }
+   ],
+   "sourceCredit": [
+    {
+     "label": "Self",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "label": "Company",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Leads of company recruited partners",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "label": "Leads of Mentor recruited partners",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "meetingCredit": [
+    {
+     "label": "Independent meeting",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Joint Meeting alongwith Senior",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Leader Role",
+     "weight": 0.75,
+     "factor": 0.75
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Support Role",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "streams": [
+    {
+     "key": "netSales",
+     "label": "Net Sales",
+     "kind": "money",
+     "order": 1,
+     "baseline": {
+      "of": "ctc",
+      "times": 5,
+      "note": "5 Times CTC"
+     },
+     "payout": "pctOfCredit",
+     "rateNote": "% of Net Credit",
+     "bands": [
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 5
+       },
+       "to": {
+        "of": "slabCtc",
+        "times": 7
+       },
+       "slab": "Silver Slab",
+       "rate": 0.0015
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 7,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabCtc",
+        "times": 10
+       },
+       "slab": "Gold Slab",
+       "rate": 0.002
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 10,
+        "plus": 1
+       },
+       "to": 99999999,
+       "slab": "Diamond Slab",
+       "rate": 0.0025
+      }
+     ]
+    },
+    {
+     "key": "freshSip",
+     "label": "Fresh SIP",
+     "kind": "money",
+     "order": 2,
+     "baseline": {
+      "of": "monthly",
+      "times": 2,
+      "note": "2 Times Monthly Salary"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess SIP",
+     "bands": [
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 2
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 4
+       },
+       "slab": "Silver Slab",
+       "rate": 40
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 4,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 6
+       },
+       "slab": "Gold Slab",
+       "rate": 50
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 6,
+        "plus": 1
+       },
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 60
+      }
+     ]
+    },
+    {
+     "key": "meetings",
+     "label": "Meetings",
+     "kind": "count",
+     "order": 3,
+     "baseline": {
+      "of": "fixed",
+      "value": 25,
+      "note": "Daily One Meeting"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess meeting",
+     "bands": [
+      {
+       "from": 25,
+       "to": 40,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 41,
+       "to": 75,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 76,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "newClients",
+     "label": "New Clients",
+     "kind": "count",
+     "order": 4,
+     "baseline": {
+      "of": "fixed",
+      "value": 5,
+      "note": "Monthly Target"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess client",
+     "bands": [
+      {
+       "from": 6,
+       "to": 10,
+       "slab": "Silver Slab",
+       "rate": 400
+      },
+      {
+       "from": 11,
+       "to": 15,
+       "slab": "Gold Slab",
+       "rate": 500
+      },
+      {
+       "from": 16,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 600
+      }
+     ]
+    },
+    {
+     "key": "callLogs",
+     "label": "Call Logs",
+     "kind": "count",
+     "order": 5,
+     "baseline": {
+      "of": "fixed",
+      "value": 250,
+      "note": "10 Calls a Day"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess call",
+     "bands": [
+      {
+       "from": 251,
+       "to": 500,
+       "slab": "Silver Slab",
+       "rate": 5
+      },
+      {
+       "from": 501,
+       "to": 750,
+       "slab": "Gold Slab",
+       "rate": 6
+      },
+      {
+       "from": 751,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 7
+      }
+     ]
+    },
+    {
+     "key": "lifeInsurance",
+     "label": "Life insurance",
+     "kind": "money",
+     "order": 6,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh LIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 50000,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 50001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "healthInsurance",
+     "label": "Health insurance",
+     "kind": "money",
+     "order": 7,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh GIP/HIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 30000,
+       "slab": "Silver Slab",
+       "rate": 50
+      },
+      {
+       "from": 30001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 60
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 70
+      }
+     ]
+    }
+   ],
+   "lifeSubs": [
+    "Term Plan"
+   ],
+   "healthSubs": [
+    "Health"
+   ],
+   "tasks": []
+  }
+ },
+ {
+  "op": "table",
+  "args": [
+   "sourceCredit",
+   0,
+   "factor",
+   "1.5"
+  ],
+  "saved": {
+   "source": "RE Incentive Template - Ver 2",
+   "slabCtc": 400000,
+   "slabBase": "individual",
+   "pointValue": null,
+   "productCredit": [
+    {
+     "cat": "Mutual Fund",
+     "sub": "Equity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Hybrid",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Multi Asset",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "SIF",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Index Fund",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "FOF",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Debt",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Equity",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Debt",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "AIF",
+     "sub": "",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "Stocks Advisory",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "IMPS",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Corporate FD",
+     "sub": "Corporate FD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Bonds",
+     "sub": "Bonds",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "NCD",
+     "sub": "NCD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Structured Product",
+     "sub": "Structured Product",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "LAS",
+     "sub": "Loans Against MF",
+     "weight": 0.5,
+     "factor": 0.5
+    }
+   ],
+   "insuranceCredit": [
+    {
+     "cat": "Life",
+     "sub": "Term Plan",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Endowment",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Annuity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Money Back",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "ULIP",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Health",
+     "sub": "Health",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "General",
+     "sub": "General",
+     "weight": 1,
+     "factor": 1
+    }
+   ],
+   "sourceCredit": [
+    {
+     "label": "Self",
+     "weight": 1.25,
+     "factor": 1.5
+    },
+    {
+     "label": "Company",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Leads of company recruited partners",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "label": "Leads of Mentor recruited partners",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "meetingCredit": [
+    {
+     "label": "Independent meeting",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Joint Meeting alongwith Senior",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Leader Role",
+     "weight": 0.75,
+     "factor": 0.75
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Support Role",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "streams": [
+    {
+     "key": "netSales",
+     "label": "Net Sales",
+     "kind": "money",
+     "order": 1,
+     "baseline": {
+      "of": "ctc",
+      "times": 5,
+      "note": "5 Times CTC"
+     },
+     "payout": "pctOfCredit",
+     "rateNote": "% of Net Credit",
+     "bands": [
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 5
+       },
+       "to": {
+        "of": "slabCtc",
+        "times": 7
+       },
+       "slab": "Silver Slab",
+       "rate": 0.0015
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 7,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabCtc",
+        "times": 10
+       },
+       "slab": "Gold Slab",
+       "rate": 0.002
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 10,
+        "plus": 1
+       },
+       "to": 99999999,
+       "slab": "Diamond Slab",
+       "rate": 0.0025
+      }
+     ]
+    },
+    {
+     "key": "freshSip",
+     "label": "Fresh SIP",
+     "kind": "money",
+     "order": 2,
+     "baseline": {
+      "of": "monthly",
+      "times": 2,
+      "note": "2 Times Monthly Salary"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess SIP",
+     "bands": [
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 2
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 4
+       },
+       "slab": "Silver Slab",
+       "rate": 40
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 4,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 6
+       },
+       "slab": "Gold Slab",
+       "rate": 50
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 6,
+        "plus": 1
+       },
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 60
+      }
+     ]
+    },
+    {
+     "key": "meetings",
+     "label": "Meetings",
+     "kind": "count",
+     "order": 3,
+     "baseline": {
+      "of": "fixed",
+      "value": 25,
+      "note": "Daily One Meeting"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess meeting",
+     "bands": [
+      {
+       "from": 25,
+       "to": 40,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 41,
+       "to": 75,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 76,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "newClients",
+     "label": "New Clients",
+     "kind": "count",
+     "order": 4,
+     "baseline": {
+      "of": "fixed",
+      "value": 5,
+      "note": "Monthly Target"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess client",
+     "bands": [
+      {
+       "from": 6,
+       "to": 10,
+       "slab": "Silver Slab",
+       "rate": 400
+      },
+      {
+       "from": 11,
+       "to": 15,
+       "slab": "Gold Slab",
+       "rate": 500
+      },
+      {
+       "from": 16,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 600
+      }
+     ]
+    },
+    {
+     "key": "callLogs",
+     "label": "Call Logs",
+     "kind": "count",
+     "order": 5,
+     "baseline": {
+      "of": "fixed",
+      "value": 250,
+      "note": "10 Calls a Day"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess call",
+     "bands": [
+      {
+       "from": 251,
+       "to": 500,
+       "slab": "Silver Slab",
+       "rate": 5
+      },
+      {
+       "from": 501,
+       "to": 750,
+       "slab": "Gold Slab",
+       "rate": 6
+      },
+      {
+       "from": 751,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 7
+      }
+     ]
+    },
+    {
+     "key": "lifeInsurance",
+     "label": "Life insurance",
+     "kind": "money",
+     "order": 6,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh LIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 50000,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 50001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "healthInsurance",
+     "label": "Health insurance",
+     "kind": "money",
+     "order": 7,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh GIP/HIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 30000,
+       "slab": "Silver Slab",
+       "rate": 50
+      },
+      {
+       "from": 30001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 60
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 70
+      }
+     ]
+    }
+   ],
+   "lifeSubs": [
+    "Term Plan"
+   ],
+   "healthSubs": [
+    "Health"
+   ],
+   "tasks": []
+  }
+ },
+ {
+  "op": "table",
+  "args": [
+   "productCredit",
+   3,
+   "sub",
+   "SIF II"
+  ],
+  "saved": {
+   "source": "RE Incentive Template - Ver 2",
+   "slabCtc": 400000,
+   "slabBase": "individual",
+   "pointValue": null,
+   "productCredit": [
+    {
+     "cat": "Mutual Fund",
+     "sub": "Equity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Hybrid",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Multi Asset",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "SIF II",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Index Fund",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "FOF",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Debt",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Equity",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Debt",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "AIF",
+     "sub": "",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "Stocks Advisory",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "IMPS",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Corporate FD",
+     "sub": "Corporate FD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Bonds",
+     "sub": "Bonds",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "NCD",
+     "sub": "NCD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Structured Product",
+     "sub": "Structured Product",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "LAS",
+     "sub": "Loans Against MF",
+     "weight": 0.5,
+     "factor": 0.5
+    }
+   ],
+   "insuranceCredit": [
+    {
+     "cat": "Life",
+     "sub": "Term Plan",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Endowment",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Annuity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Money Back",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "ULIP",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Health",
+     "sub": "Health",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "General",
+     "sub": "General",
+     "weight": 1,
+     "factor": 1
+    }
+   ],
+   "sourceCredit": [
+    {
+     "label": "Self",
+     "weight": 1.25,
+     "factor": 1.5
+    },
+    {
+     "label": "Company",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Leads of company recruited partners",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "label": "Leads of Mentor recruited partners",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "meetingCredit": [
+    {
+     "label": "Independent meeting",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Joint Meeting alongwith Senior",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Leader Role",
+     "weight": 0.75,
+     "factor": 0.75
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Support Role",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "streams": [
+    {
+     "key": "netSales",
+     "label": "Net Sales",
+     "kind": "money",
+     "order": 1,
+     "baseline": {
+      "of": "ctc",
+      "times": 5,
+      "note": "5 Times CTC"
+     },
+     "payout": "pctOfCredit",
+     "rateNote": "% of Net Credit",
+     "bands": [
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 5
+       },
+       "to": {
+        "of": "slabCtc",
+        "times": 7
+       },
+       "slab": "Silver Slab",
+       "rate": 0.0015
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 7,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabCtc",
+        "times": 10
+       },
+       "slab": "Gold Slab",
+       "rate": 0.002
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 10,
+        "plus": 1
+       },
+       "to": 99999999,
+       "slab": "Diamond Slab",
+       "rate": 0.0025
+      }
+     ]
+    },
+    {
+     "key": "freshSip",
+     "label": "Fresh SIP",
+     "kind": "money",
+     "order": 2,
+     "baseline": {
+      "of": "monthly",
+      "times": 2,
+      "note": "2 Times Monthly Salary"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess SIP",
+     "bands": [
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 2
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 4
+       },
+       "slab": "Silver Slab",
+       "rate": 40
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 4,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 6
+       },
+       "slab": "Gold Slab",
+       "rate": 50
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 6,
+        "plus": 1
+       },
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 60
+      }
+     ]
+    },
+    {
+     "key": "meetings",
+     "label": "Meetings",
+     "kind": "count",
+     "order": 3,
+     "baseline": {
+      "of": "fixed",
+      "value": 25,
+      "note": "Daily One Meeting"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess meeting",
+     "bands": [
+      {
+       "from": 25,
+       "to": 40,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 41,
+       "to": 75,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 76,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "newClients",
+     "label": "New Clients",
+     "kind": "count",
+     "order": 4,
+     "baseline": {
+      "of": "fixed",
+      "value": 5,
+      "note": "Monthly Target"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess client",
+     "bands": [
+      {
+       "from": 6,
+       "to": 10,
+       "slab": "Silver Slab",
+       "rate": 400
+      },
+      {
+       "from": 11,
+       "to": 15,
+       "slab": "Gold Slab",
+       "rate": 500
+      },
+      {
+       "from": 16,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 600
+      }
+     ]
+    },
+    {
+     "key": "callLogs",
+     "label": "Call Logs",
+     "kind": "count",
+     "order": 5,
+     "baseline": {
+      "of": "fixed",
+      "value": 250,
+      "note": "10 Calls a Day"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess call",
+     "bands": [
+      {
+       "from": 251,
+       "to": 500,
+       "slab": "Silver Slab",
+       "rate": 5
+      },
+      {
+       "from": 501,
+       "to": 750,
+       "slab": "Gold Slab",
+       "rate": 6
+      },
+      {
+       "from": 751,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 7
+      }
+     ]
+    },
+    {
+     "key": "lifeInsurance",
+     "label": "Life insurance",
+     "kind": "money",
+     "order": 6,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh LIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 50000,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 50001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "healthInsurance",
+     "label": "Health insurance",
+     "kind": "money",
+     "order": 7,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh GIP/HIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 30000,
+       "slab": "Silver Slab",
+       "rate": 50
+      },
+      {
+       "from": 30001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 60
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 70
+      }
+     ]
+    }
+   ],
+   "lifeSubs": [
+    "Term Plan"
+   ],
+   "healthSubs": [
+    "Health"
+   ],
+   "tasks": []
+  }
+ },
+ {
+  "op": "table",
+  "args": [
+   "meetingCredit",
+   9,
+   "factor",
+   "2"
+  ],
+  "saved": {
+   "source": "RE Incentive Template - Ver 2",
+   "slabCtc": 400000,
+   "slabBase": "individual",
+   "pointValue": null,
+   "productCredit": [
+    {
+     "cat": "Mutual Fund",
+     "sub": "Equity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Hybrid",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Multi Asset",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "SIF II",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Index Fund",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "FOF",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Debt",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Equity",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Debt",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "AIF",
+     "sub": "",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "Stocks Advisory",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "IMPS",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Corporate FD",
+     "sub": "Corporate FD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Bonds",
+     "sub": "Bonds",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "NCD",
+     "sub": "NCD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Structured Product",
+     "sub": "Structured Product",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "LAS",
+     "sub": "Loans Against MF",
+     "weight": 0.5,
+     "factor": 0.5
+    }
+   ],
+   "insuranceCredit": [
+    {
+     "cat": "Life",
+     "sub": "Term Plan",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Endowment",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Annuity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Money Back",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "ULIP",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Health",
+     "sub": "Health",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "General",
+     "sub": "General",
+     "weight": 1,
+     "factor": 1
+    }
+   ],
+   "sourceCredit": [
+    {
+     "label": "Self",
+     "weight": 1.25,
+     "factor": 1.5
+    },
+    {
+     "label": "Company",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Leads of company recruited partners",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "label": "Leads of Mentor recruited partners",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "meetingCredit": [
+    {
+     "label": "Independent meeting",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Joint Meeting alongwith Senior",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Leader Role",
+     "weight": 0.75,
+     "factor": 0.75
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Support Role",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "streams": [
+    {
+     "key": "netSales",
+     "label": "Net Sales",
+     "kind": "money",
+     "order": 1,
+     "baseline": {
+      "of": "ctc",
+      "times": 5,
+      "note": "5 Times CTC"
+     },
+     "payout": "pctOfCredit",
+     "rateNote": "% of Net Credit",
+     "bands": [
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 5
+       },
+       "to": {
+        "of": "slabCtc",
+        "times": 7
+       },
+       "slab": "Silver Slab",
+       "rate": 0.0015
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 7,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabCtc",
+        "times": 10
+       },
+       "slab": "Gold Slab",
+       "rate": 0.002
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 10,
+        "plus": 1
+       },
+       "to": 99999999,
+       "slab": "Diamond Slab",
+       "rate": 0.0025
+      }
+     ]
+    },
+    {
+     "key": "freshSip",
+     "label": "Fresh SIP",
+     "kind": "money",
+     "order": 2,
+     "baseline": {
+      "of": "monthly",
+      "times": 2,
+      "note": "2 Times Monthly Salary"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess SIP",
+     "bands": [
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 2
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 4
+       },
+       "slab": "Silver Slab",
+       "rate": 40
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 4,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 6
+       },
+       "slab": "Gold Slab",
+       "rate": 50
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 6,
+        "plus": 1
+       },
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 60
+      }
+     ]
+    },
+    {
+     "key": "meetings",
+     "label": "Meetings",
+     "kind": "count",
+     "order": 3,
+     "baseline": {
+      "of": "fixed",
+      "value": 25,
+      "note": "Daily One Meeting"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess meeting",
+     "bands": [
+      {
+       "from": 25,
+       "to": 40,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 41,
+       "to": 75,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 76,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "newClients",
+     "label": "New Clients",
+     "kind": "count",
+     "order": 4,
+     "baseline": {
+      "of": "fixed",
+      "value": 5,
+      "note": "Monthly Target"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess client",
+     "bands": [
+      {
+       "from": 6,
+       "to": 10,
+       "slab": "Silver Slab",
+       "rate": 400
+      },
+      {
+       "from": 11,
+       "to": 15,
+       "slab": "Gold Slab",
+       "rate": 500
+      },
+      {
+       "from": 16,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 600
+      }
+     ]
+    },
+    {
+     "key": "callLogs",
+     "label": "Call Logs",
+     "kind": "count",
+     "order": 5,
+     "baseline": {
+      "of": "fixed",
+      "value": 250,
+      "note": "10 Calls a Day"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess call",
+     "bands": [
+      {
+       "from": 251,
+       "to": 500,
+       "slab": "Silver Slab",
+       "rate": 5
+      },
+      {
+       "from": 501,
+       "to": 750,
+       "slab": "Gold Slab",
+       "rate": 6
+      },
+      {
+       "from": 751,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 7
+      }
+     ]
+    },
+    {
+     "key": "lifeInsurance",
+     "label": "Life insurance",
+     "kind": "money",
+     "order": 6,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh LIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 50000,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 50001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "healthInsurance",
+     "label": "Health insurance",
+     "kind": "money",
+     "order": 7,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh GIP/HIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 30000,
+       "slab": "Silver Slab",
+       "rate": 50
+      },
+      {
+       "from": 30001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 60
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 70
+      }
+     ]
+    }
+   ],
+   "lifeSubs": [
+    "Term Plan"
+   ],
+   "healthSubs": [
+    "Health"
+   ],
+   "tasks": []
+  }
+ },
+ {
+  "op": "band",
+  "args": [
+   "callLogs",
+   1,
+   "rate",
+   "6.5"
+  ],
+  "saved": {
+   "source": "RE Incentive Template - Ver 2",
+   "slabCtc": 400000,
+   "slabBase": "individual",
+   "pointValue": null,
+   "productCredit": [
+    {
+     "cat": "Mutual Fund",
+     "sub": "Equity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Hybrid",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Multi Asset",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "SIF II",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Index Fund",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "FOF",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Debt",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Equity",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Debt",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "AIF",
+     "sub": "",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "Stocks Advisory",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "IMPS",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Corporate FD",
+     "sub": "Corporate FD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Bonds",
+     "sub": "Bonds",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "NCD",
+     "sub": "NCD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Structured Product",
+     "sub": "Structured Product",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "LAS",
+     "sub": "Loans Against MF",
+     "weight": 0.5,
+     "factor": 0.5
+    }
+   ],
+   "insuranceCredit": [
+    {
+     "cat": "Life",
+     "sub": "Term Plan",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Endowment",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Annuity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Money Back",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "ULIP",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Health",
+     "sub": "Health",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "General",
+     "sub": "General",
+     "weight": 1,
+     "factor": 1
+    }
+   ],
+   "sourceCredit": [
+    {
+     "label": "Self",
+     "weight": 1.25,
+     "factor": 1.5
+    },
+    {
+     "label": "Company",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Leads of company recruited partners",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "label": "Leads of Mentor recruited partners",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "meetingCredit": [
+    {
+     "label": "Independent meeting",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Joint Meeting alongwith Senior",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Leader Role",
+     "weight": 0.75,
+     "factor": 0.75
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Support Role",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "streams": [
+    {
+     "key": "netSales",
+     "label": "Net Sales",
+     "kind": "money",
+     "order": 1,
+     "baseline": {
+      "of": "ctc",
+      "times": 5,
+      "note": "5 Times CTC"
+     },
+     "payout": "pctOfCredit",
+     "rateNote": "% of Net Credit",
+     "bands": [
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 5
+       },
+       "to": {
+        "of": "slabCtc",
+        "times": 7
+       },
+       "slab": "Silver Slab",
+       "rate": 0.0015
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 7,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabCtc",
+        "times": 10
+       },
+       "slab": "Gold Slab",
+       "rate": 0.002
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 10,
+        "plus": 1
+       },
+       "to": 99999999,
+       "slab": "Diamond Slab",
+       "rate": 0.0025
+      }
+     ]
+    },
+    {
+     "key": "freshSip",
+     "label": "Fresh SIP",
+     "kind": "money",
+     "order": 2,
+     "baseline": {
+      "of": "monthly",
+      "times": 2,
+      "note": "2 Times Monthly Salary"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess SIP",
+     "bands": [
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 2
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 4
+       },
+       "slab": "Silver Slab",
+       "rate": 40
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 4,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 6
+       },
+       "slab": "Gold Slab",
+       "rate": 50
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 6,
+        "plus": 1
+       },
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 60
+      }
+     ]
+    },
+    {
+     "key": "meetings",
+     "label": "Meetings",
+     "kind": "count",
+     "order": 3,
+     "baseline": {
+      "of": "fixed",
+      "value": 25,
+      "note": "Daily One Meeting"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess meeting",
+     "bands": [
+      {
+       "from": 25,
+       "to": 40,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 41,
+       "to": 75,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 76,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "newClients",
+     "label": "New Clients",
+     "kind": "count",
+     "order": 4,
+     "baseline": {
+      "of": "fixed",
+      "value": 5,
+      "note": "Monthly Target"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess client",
+     "bands": [
+      {
+       "from": 6,
+       "to": 10,
+       "slab": "Silver Slab",
+       "rate": 400
+      },
+      {
+       "from": 11,
+       "to": 15,
+       "slab": "Gold Slab",
+       "rate": 500
+      },
+      {
+       "from": 16,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 600
+      }
+     ]
+    },
+    {
+     "key": "callLogs",
+     "label": "Call Logs",
+     "kind": "count",
+     "order": 5,
+     "baseline": {
+      "of": "fixed",
+      "value": 250,
+      "note": "10 Calls a Day"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess call",
+     "bands": [
+      {
+       "from": 251,
+       "to": 500,
+       "slab": "Silver Slab",
+       "rate": 5
+      },
+      {
+       "from": 501,
+       "to": 750,
+       "slab": "Gold Slab",
+       "rate": 6.5
+      },
+      {
+       "from": 751,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 7
+      }
+     ]
+    },
+    {
+     "key": "lifeInsurance",
+     "label": "Life insurance",
+     "kind": "money",
+     "order": 6,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh LIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 50000,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 50001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "healthInsurance",
+     "label": "Health insurance",
+     "kind": "money",
+     "order": 7,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh GIP/HIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 30000,
+       "slab": "Silver Slab",
+       "rate": 50
+      },
+      {
+       "from": 30001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 60
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 70
+      }
+     ]
+    }
+   ],
+   "lifeSubs": [
+    "Term Plan"
+   ],
+   "healthSubs": [
+    "Health"
+   ],
+   "tasks": []
+  }
+ },
+ {
+  "op": "band",
+  "args": [
+   "netSales",
+   0,
+   "from",
+   "1000"
+  ],
+  "saved": {
+   "source": "RE Incentive Template - Ver 2",
+   "slabCtc": 400000,
+   "slabBase": "individual",
+   "pointValue": null,
+   "productCredit": [
+    {
+     "cat": "Mutual Fund",
+     "sub": "Equity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Hybrid",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Multi Asset",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "SIF II",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Index Fund",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "FOF",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Debt",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Equity",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Debt",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "AIF",
+     "sub": "",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "Stocks Advisory",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "IMPS",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Corporate FD",
+     "sub": "Corporate FD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Bonds",
+     "sub": "Bonds",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "NCD",
+     "sub": "NCD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Structured Product",
+     "sub": "Structured Product",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "LAS",
+     "sub": "Loans Against MF",
+     "weight": 0.5,
+     "factor": 0.5
+    }
+   ],
+   "insuranceCredit": [
+    {
+     "cat": "Life",
+     "sub": "Term Plan",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Endowment",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Annuity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Money Back",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "ULIP",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Health",
+     "sub": "Health",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "General",
+     "sub": "General",
+     "weight": 1,
+     "factor": 1
+    }
+   ],
+   "sourceCredit": [
+    {
+     "label": "Self",
+     "weight": 1.25,
+     "factor": 1.5
+    },
+    {
+     "label": "Company",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Leads of company recruited partners",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "label": "Leads of Mentor recruited partners",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "meetingCredit": [
+    {
+     "label": "Independent meeting",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Joint Meeting alongwith Senior",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Leader Role",
+     "weight": 0.75,
+     "factor": 0.75
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Support Role",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "streams": [
+    {
+     "key": "netSales",
+     "label": "Net Sales",
+     "kind": "money",
+     "order": 1,
+     "baseline": {
+      "of": "ctc",
+      "times": 5,
+      "note": "5 Times CTC"
+     },
+     "payout": "pctOfCredit",
+     "rateNote": "% of Net Credit",
+     "bands": [
+      {
+       "from": 1000,
+       "to": {
+        "of": "slabCtc",
+        "times": 7
+       },
+       "slab": "Silver Slab",
+       "rate": 0.0015
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 7,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabCtc",
+        "times": 10
+       },
+       "slab": "Gold Slab",
+       "rate": 0.002
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 10,
+        "plus": 1
+       },
+       "to": 99999999,
+       "slab": "Diamond Slab",
+       "rate": 0.0025
+      }
+     ]
+    },
+    {
+     "key": "freshSip",
+     "label": "Fresh SIP",
+     "kind": "money",
+     "order": 2,
+     "baseline": {
+      "of": "monthly",
+      "times": 2,
+      "note": "2 Times Monthly Salary"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess SIP",
+     "bands": [
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 2
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 4
+       },
+       "slab": "Silver Slab",
+       "rate": 40
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 4,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 6
+       },
+       "slab": "Gold Slab",
+       "rate": 50
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 6,
+        "plus": 1
+       },
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 60
+      }
+     ]
+    },
+    {
+     "key": "meetings",
+     "label": "Meetings",
+     "kind": "count",
+     "order": 3,
+     "baseline": {
+      "of": "fixed",
+      "value": 25,
+      "note": "Daily One Meeting"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess meeting",
+     "bands": [
+      {
+       "from": 25,
+       "to": 40,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 41,
+       "to": 75,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 76,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "newClients",
+     "label": "New Clients",
+     "kind": "count",
+     "order": 4,
+     "baseline": {
+      "of": "fixed",
+      "value": 5,
+      "note": "Monthly Target"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess client",
+     "bands": [
+      {
+       "from": 6,
+       "to": 10,
+       "slab": "Silver Slab",
+       "rate": 400
+      },
+      {
+       "from": 11,
+       "to": 15,
+       "slab": "Gold Slab",
+       "rate": 500
+      },
+      {
+       "from": 16,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 600
+      }
+     ]
+    },
+    {
+     "key": "callLogs",
+     "label": "Call Logs",
+     "kind": "count",
+     "order": 5,
+     "baseline": {
+      "of": "fixed",
+      "value": 250,
+      "note": "10 Calls a Day"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess call",
+     "bands": [
+      {
+       "from": 251,
+       "to": 500,
+       "slab": "Silver Slab",
+       "rate": 5
+      },
+      {
+       "from": 501,
+       "to": 750,
+       "slab": "Gold Slab",
+       "rate": 6.5
+      },
+      {
+       "from": 751,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 7
+      }
+     ]
+    },
+    {
+     "key": "lifeInsurance",
+     "label": "Life insurance",
+     "kind": "money",
+     "order": 6,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh LIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 50000,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 50001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "healthInsurance",
+     "label": "Health insurance",
+     "kind": "money",
+     "order": 7,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh GIP/HIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 30000,
+       "slab": "Silver Slab",
+       "rate": 50
+      },
+      {
+       "from": 30001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 60
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 70
+      }
+     ]
+    }
+   ],
+   "lifeSubs": [
+    "Term Plan"
+   ],
+   "healthSubs": [
+    "Health"
+   ],
+   "tasks": []
+  }
+ },
+ {
+  "op": "band",
+  "args": [
+   "nope",
+   0,
+   "rate",
+   "1"
+  ],
+  "saved": {
+   "source": "RE Incentive Template - Ver 2",
+   "slabCtc": 400000,
+   "slabBase": "individual",
+   "pointValue": null,
+   "productCredit": [
+    {
+     "cat": "Mutual Fund",
+     "sub": "Equity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Hybrid",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Multi Asset",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "SIF II",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Index Fund",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "FOF",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Debt",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Equity",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Debt",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "AIF",
+     "sub": "",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "Stocks Advisory",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "IMPS",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Corporate FD",
+     "sub": "Corporate FD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Bonds",
+     "sub": "Bonds",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "NCD",
+     "sub": "NCD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Structured Product",
+     "sub": "Structured Product",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "LAS",
+     "sub": "Loans Against MF",
+     "weight": 0.5,
+     "factor": 0.5
+    }
+   ],
+   "insuranceCredit": [
+    {
+     "cat": "Life",
+     "sub": "Term Plan",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Endowment",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Annuity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Money Back",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "ULIP",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Health",
+     "sub": "Health",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "General",
+     "sub": "General",
+     "weight": 1,
+     "factor": 1
+    }
+   ],
+   "sourceCredit": [
+    {
+     "label": "Self",
+     "weight": 1.25,
+     "factor": 1.5
+    },
+    {
+     "label": "Company",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Leads of company recruited partners",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "label": "Leads of Mentor recruited partners",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "meetingCredit": [
+    {
+     "label": "Independent meeting",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Joint Meeting alongwith Senior",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Leader Role",
+     "weight": 0.75,
+     "factor": 0.75
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Support Role",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "streams": [
+    {
+     "key": "netSales",
+     "label": "Net Sales",
+     "kind": "money",
+     "order": 1,
+     "baseline": {
+      "of": "ctc",
+      "times": 5,
+      "note": "5 Times CTC"
+     },
+     "payout": "pctOfCredit",
+     "rateNote": "% of Net Credit",
+     "bands": [
+      {
+       "from": 1000,
+       "to": {
+        "of": "slabCtc",
+        "times": 7
+       },
+       "slab": "Silver Slab",
+       "rate": 0.0015
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 7,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabCtc",
+        "times": 10
+       },
+       "slab": "Gold Slab",
+       "rate": 0.002
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 10,
+        "plus": 1
+       },
+       "to": 99999999,
+       "slab": "Diamond Slab",
+       "rate": 0.0025
+      }
+     ]
+    },
+    {
+     "key": "freshSip",
+     "label": "Fresh SIP",
+     "kind": "money",
+     "order": 2,
+     "baseline": {
+      "of": "monthly",
+      "times": 2,
+      "note": "2 Times Monthly Salary"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess SIP",
+     "bands": [
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 2
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 4
+       },
+       "slab": "Silver Slab",
+       "rate": 40
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 4,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 6
+       },
+       "slab": "Gold Slab",
+       "rate": 50
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 6,
+        "plus": 1
+       },
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 60
+      }
+     ]
+    },
+    {
+     "key": "meetings",
+     "label": "Meetings",
+     "kind": "count",
+     "order": 3,
+     "baseline": {
+      "of": "fixed",
+      "value": 25,
+      "note": "Daily One Meeting"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess meeting",
+     "bands": [
+      {
+       "from": 25,
+       "to": 40,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 41,
+       "to": 75,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 76,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "newClients",
+     "label": "New Clients",
+     "kind": "count",
+     "order": 4,
+     "baseline": {
+      "of": "fixed",
+      "value": 5,
+      "note": "Monthly Target"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess client",
+     "bands": [
+      {
+       "from": 6,
+       "to": 10,
+       "slab": "Silver Slab",
+       "rate": 400
+      },
+      {
+       "from": 11,
+       "to": 15,
+       "slab": "Gold Slab",
+       "rate": 500
+      },
+      {
+       "from": 16,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 600
+      }
+     ]
+    },
+    {
+     "key": "callLogs",
+     "label": "Call Logs",
+     "kind": "count",
+     "order": 5,
+     "baseline": {
+      "of": "fixed",
+      "value": 250,
+      "note": "10 Calls a Day"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess call",
+     "bands": [
+      {
+       "from": 251,
+       "to": 500,
+       "slab": "Silver Slab",
+       "rate": 5
+      },
+      {
+       "from": 501,
+       "to": 750,
+       "slab": "Gold Slab",
+       "rate": 6.5
+      },
+      {
+       "from": 751,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 7
+      }
+     ]
+    },
+    {
+     "key": "lifeInsurance",
+     "label": "Life insurance",
+     "kind": "money",
+     "order": 6,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh LIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 50000,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 50001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "healthInsurance",
+     "label": "Health insurance",
+     "kind": "money",
+     "order": 7,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh GIP/HIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 30000,
+       "slab": "Silver Slab",
+       "rate": 50
+      },
+      {
+       "from": 30001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 60
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 70
+      }
+     ]
+    }
+   ],
+   "lifeSubs": [
+    "Term Plan"
+   ],
+   "healthSubs": [
+    "Health"
+   ],
+   "tasks": []
+  }
+ },
+ {
+  "op": "set",
+  "args": [
+   "salesRoles",
+   [
+    "Relationship Executive"
+   ]
+  ],
+  "saved": {
+   "source": "RE Incentive Template - Ver 2",
+   "slabCtc": 400000,
+   "slabBase": "individual",
+   "pointValue": null,
+   "productCredit": [
+    {
+     "cat": "Mutual Fund",
+     "sub": "Equity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Hybrid",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Multi Asset",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "SIF II",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Index Fund",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "FOF",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Debt",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Equity",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Debt",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "AIF",
+     "sub": "",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "Stocks Advisory",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "IMPS",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Corporate FD",
+     "sub": "Corporate FD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Bonds",
+     "sub": "Bonds",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "NCD",
+     "sub": "NCD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Structured Product",
+     "sub": "Structured Product",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "LAS",
+     "sub": "Loans Against MF",
+     "weight": 0.5,
+     "factor": 0.5
+    }
+   ],
+   "insuranceCredit": [
+    {
+     "cat": "Life",
+     "sub": "Term Plan",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Endowment",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Annuity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Money Back",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "ULIP",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Health",
+     "sub": "Health",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "General",
+     "sub": "General",
+     "weight": 1,
+     "factor": 1
+    }
+   ],
+   "sourceCredit": [
+    {
+     "label": "Self",
+     "weight": 1.25,
+     "factor": 1.5
+    },
+    {
+     "label": "Company",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Leads of company recruited partners",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "label": "Leads of Mentor recruited partners",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "meetingCredit": [
+    {
+     "label": "Independent meeting",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Joint Meeting alongwith Senior",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Leader Role",
+     "weight": 0.75,
+     "factor": 0.75
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Support Role",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "streams": [
+    {
+     "key": "netSales",
+     "label": "Net Sales",
+     "kind": "money",
+     "order": 1,
+     "baseline": {
+      "of": "ctc",
+      "times": 5,
+      "note": "5 Times CTC"
+     },
+     "payout": "pctOfCredit",
+     "rateNote": "% of Net Credit",
+     "bands": [
+      {
+       "from": 1000,
+       "to": {
+        "of": "slabCtc",
+        "times": 7
+       },
+       "slab": "Silver Slab",
+       "rate": 0.0015
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 7,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabCtc",
+        "times": 10
+       },
+       "slab": "Gold Slab",
+       "rate": 0.002
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 10,
+        "plus": 1
+       },
+       "to": 99999999,
+       "slab": "Diamond Slab",
+       "rate": 0.0025
+      }
+     ]
+    },
+    {
+     "key": "freshSip",
+     "label": "Fresh SIP",
+     "kind": "money",
+     "order": 2,
+     "baseline": {
+      "of": "monthly",
+      "times": 2,
+      "note": "2 Times Monthly Salary"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess SIP",
+     "bands": [
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 2
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 4
+       },
+       "slab": "Silver Slab",
+       "rate": 40
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 4,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 6
+       },
+       "slab": "Gold Slab",
+       "rate": 50
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 6,
+        "plus": 1
+       },
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 60
+      }
+     ]
+    },
+    {
+     "key": "meetings",
+     "label": "Meetings",
+     "kind": "count",
+     "order": 3,
+     "baseline": {
+      "of": "fixed",
+      "value": 25,
+      "note": "Daily One Meeting"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess meeting",
+     "bands": [
+      {
+       "from": 25,
+       "to": 40,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 41,
+       "to": 75,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 76,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "newClients",
+     "label": "New Clients",
+     "kind": "count",
+     "order": 4,
+     "baseline": {
+      "of": "fixed",
+      "value": 5,
+      "note": "Monthly Target"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess client",
+     "bands": [
+      {
+       "from": 6,
+       "to": 10,
+       "slab": "Silver Slab",
+       "rate": 400
+      },
+      {
+       "from": 11,
+       "to": 15,
+       "slab": "Gold Slab",
+       "rate": 500
+      },
+      {
+       "from": 16,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 600
+      }
+     ]
+    },
+    {
+     "key": "callLogs",
+     "label": "Call Logs",
+     "kind": "count",
+     "order": 5,
+     "baseline": {
+      "of": "fixed",
+      "value": 250,
+      "note": "10 Calls a Day"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess call",
+     "bands": [
+      {
+       "from": 251,
+       "to": 500,
+       "slab": "Silver Slab",
+       "rate": 5
+      },
+      {
+       "from": 501,
+       "to": 750,
+       "slab": "Gold Slab",
+       "rate": 6.5
+      },
+      {
+       "from": 751,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 7
+      }
+     ]
+    },
+    {
+     "key": "lifeInsurance",
+     "label": "Life insurance",
+     "kind": "money",
+     "order": 6,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh LIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 50000,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 50001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "healthInsurance",
+     "label": "Health insurance",
+     "kind": "money",
+     "order": 7,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh GIP/HIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 30000,
+       "slab": "Silver Slab",
+       "rate": 50
+      },
+      {
+       "from": 30001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 60
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 70
+      }
+     ]
+    }
+   ],
+   "lifeSubs": [
+    "Term Plan"
+   ],
+   "healthSubs": [
+    "Health"
+   ],
+   "tasks": [],
+   "salesRoles": [
+    "Relationship Executive"
+   ]
+  }
+ },
+ {
+  "op": "set",
+  "args": [
+   "pointValue",
+   null
+  ],
+  "saved": {
+   "source": "RE Incentive Template - Ver 2",
+   "slabCtc": 400000,
+   "slabBase": "individual",
+   "pointValue": null,
+   "productCredit": [
+    {
+     "cat": "Mutual Fund",
+     "sub": "Equity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Hybrid",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Multi Asset",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "SIF II",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Index Fund",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "FOF",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "Mutual Fund",
+     "sub": "Debt",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Equity",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "PMS",
+     "sub": "Debt",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "cat": "AIF",
+     "sub": "",
+     "weight": 1.25,
+     "factor": 1.25
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "Stocks Advisory",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Direct Equity",
+     "sub": "IMPS",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Corporate FD",
+     "sub": "Corporate FD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Bonds",
+     "sub": "Bonds",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "NCD",
+     "sub": "NCD",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "Structured Product",
+     "sub": "Structured Product",
+     "weight": 0.1,
+     "factor": 0.1
+    },
+    {
+     "cat": "LAS",
+     "sub": "Loans Against MF",
+     "weight": 0.5,
+     "factor": 0.5
+    }
+   ],
+   "insuranceCredit": [
+    {
+     "cat": "Life",
+     "sub": "Term Plan",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Endowment",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Annuity",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "Money Back",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Life",
+     "sub": "ULIP",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "Health",
+     "sub": "Health",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "cat": "General",
+     "sub": "General",
+     "weight": 1,
+     "factor": 1
+    }
+   ],
+   "sourceCredit": [
+    {
+     "label": "Self",
+     "weight": 1.25,
+     "factor": 1.5
+    },
+    {
+     "label": "Company",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Leads of company recruited partners",
+     "weight": 0.5,
+     "factor": 0.5
+    },
+    {
+     "label": "Leads of Mentor recruited partners",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "meetingCredit": [
+    {
+     "label": "Independent meeting",
+     "weight": 1,
+     "factor": 1
+    },
+    {
+     "label": "Joint Meeting alongwith Senior",
+     "weight": 0.25,
+     "factor": 0.25
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Leader Role",
+     "weight": 0.75,
+     "factor": 0.75
+    },
+    {
+     "label": "Joint Meeting alongwith Colleague - Support Role",
+     "weight": 0.25,
+     "factor": 0.25
+    }
+   ],
+   "streams": [
+    {
+     "key": "netSales",
+     "label": "Net Sales",
+     "kind": "money",
+     "order": 1,
+     "baseline": {
+      "of": "ctc",
+      "times": 5,
+      "note": "5 Times CTC"
+     },
+     "payout": "pctOfCredit",
+     "rateNote": "% of Net Credit",
+     "bands": [
+      {
+       "from": 1000,
+       "to": {
+        "of": "slabCtc",
+        "times": 7
+       },
+       "slab": "Silver Slab",
+       "rate": 0.0015
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 7,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabCtc",
+        "times": 10
+       },
+       "slab": "Gold Slab",
+       "rate": 0.002
+      },
+      {
+       "from": {
+        "of": "slabCtc",
+        "times": 10,
+        "plus": 1
+       },
+       "to": 99999999,
+       "slab": "Diamond Slab",
+       "rate": 0.0025
+      }
+     ]
+    },
+    {
+     "key": "freshSip",
+     "label": "Fresh SIP",
+     "kind": "money",
+     "order": 2,
+     "baseline": {
+      "of": "monthly",
+      "times": 2,
+      "note": "2 Times Monthly Salary"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess SIP",
+     "bands": [
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 2
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 4
+       },
+       "slab": "Silver Slab",
+       "rate": 40
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 4,
+        "plus": 1
+       },
+       "to": {
+        "of": "slabMonthly",
+        "times": 6
+       },
+       "slab": "Gold Slab",
+       "rate": 50
+      },
+      {
+       "from": {
+        "of": "slabMonthly",
+        "times": 6,
+        "plus": 1
+       },
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 60
+      }
+     ]
+    },
+    {
+     "key": "meetings",
+     "label": "Meetings",
+     "kind": "count",
+     "order": 3,
+     "baseline": {
+      "of": "fixed",
+      "value": 25,
+      "note": "Daily One Meeting"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess meeting",
+     "bands": [
+      {
+       "from": 25,
+       "to": 40,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 41,
+       "to": 75,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 76,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "newClients",
+     "label": "New Clients",
+     "kind": "count",
+     "order": 4,
+     "baseline": {
+      "of": "fixed",
+      "value": 5,
+      "note": "Monthly Target"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess client",
+     "bands": [
+      {
+       "from": 6,
+       "to": 10,
+       "slab": "Silver Slab",
+       "rate": 400
+      },
+      {
+       "from": 11,
+       "to": 15,
+       "slab": "Gold Slab",
+       "rate": 500
+      },
+      {
+       "from": 16,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 600
+      }
+     ]
+    },
+    {
+     "key": "callLogs",
+     "label": "Call Logs",
+     "kind": "count",
+     "order": 5,
+     "baseline": {
+      "of": "fixed",
+      "value": 250,
+      "note": "10 Calls a Day"
+     },
+     "payout": "perExcessUnit",
+     "rateNote": "Per excess call",
+     "bands": [
+      {
+       "from": 251,
+       "to": 500,
+       "slab": "Silver Slab",
+       "rate": 5
+      },
+      {
+       "from": 501,
+       "to": 750,
+       "slab": "Gold Slab",
+       "rate": 6.5
+      },
+      {
+       "from": 751,
+       "to": 9999,
+       "slab": "Diamond Slab",
+       "rate": 7
+      }
+     ]
+    },
+    {
+     "key": "lifeInsurance",
+     "label": "Life insurance",
+     "kind": "money",
+     "order": 6,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh LIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 50000,
+       "slab": "Silver Slab",
+       "rate": 100
+      },
+      {
+       "from": 50001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 110
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 120
+      }
+     ]
+    },
+    {
+     "key": "healthInsurance",
+     "label": "Health insurance",
+     "kind": "money",
+     "order": 7,
+     "baseline": {
+      "of": "fixed",
+      "value": 10000,
+      "note": "Fresh GIP/HIP"
+     },
+     "payout": "perThousandExcess",
+     "rateNote": "Per Rs 1000 excess premium",
+     "bands": [
+      {
+       "from": 10000,
+       "to": 30000,
+       "slab": "Silver Slab",
+       "rate": 50
+      },
+      {
+       "from": 30001,
+       "to": 100000,
+       "slab": "Gold Slab",
+       "rate": 60
+      },
+      {
+       "from": 100001,
+       "to": 9999999,
+       "slab": "Diamond Slab",
+       "rate": 70
+      }
+     ]
+    }
+   ],
+   "lifeSubs": [
+    "Term Plan"
+   ],
+   "healthSubs": [
+    "Health"
+   ],
+   "tasks": [],
+   "salesRoles": [
+    "Relationship Executive"
+   ]
+  }
+ }
+]

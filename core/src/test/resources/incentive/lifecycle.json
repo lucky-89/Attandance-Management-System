@@ -1,0 +1,6108 @@
+{
+ "saved0": {
+  "salesRoles": [
+   "Relationship Executive"
+  ]
+ },
+ "people": [
+  {
+   "id": "P1",
+   "name": "Asha",
+   "role": "Relationship Executive",
+   "department": "Wealth",
+   "ctc": 360000
+  },
+  {
+   "id": "P2",
+   "name": "Ravi",
+   "role": "  relationship   executive ",
+   "department": "Ops",
+   "ctc": 480000
+  },
+  {
+   "id": "P3",
+   "name": "Mina",
+   "role": "Analyst",
+   "department": " sales desk",
+   "ctc": 500000
+  },
+  {
+   "id": "P4",
+   "name": "Om",
+   "role": "Relationship Executive",
+   "department": "Wealth",
+   "ctc": 300000,
+   "incentiveCategory": "nonSales"
+  },
+  {
+   "id": "P5",
+   "name": "Lata",
+   "role": "Accountant",
+   "department": "Finance",
+   "ctc": 0,
+   "incentiveCategory": "sales"
+  },
+  {
+   "id": "P6",
+   "name": "Noor",
+   "role": "",
+   "department": "",
+   "ctc": 240000,
+   "incentiveCategory": "bogus"
+  },
+  {
+   "id": "P7",
+   "name": "Zed"
+  }
+ ],
+ "steps": [
+  {
+   "label": "blank sales",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ]
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "sales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-1",
+    "userId": "P1",
+    "month": "2026-10",
+    "kind": "sales",
+    "annualCtc": 360000,
+    "branch": "",
+    "designation": "Relationship Executive",
+    "netSalesRows": [],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Draft",
+    "snapshot": null,
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.698Z",
+    "createdBy": "HR1"
+   },
+   "kind": "sales",
+   "result": {
+    "basis": {
+     "ctc": 360000,
+     "monthly": 30000,
+     "slabCtc": 400000,
+     "slabMonthly": 33333.333333333336
+    },
+    "sections": {
+     "investment": [],
+     "sip": [],
+     "insurance": []
+    },
+    "totals": {
+     "investment": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     },
+     "sip": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     },
+     "insurance": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     }
+    },
+    "premiumTotal": 0,
+    "credits": {
+     "netSales": 0,
+     "freshSip": 0,
+     "meetings": 0,
+     "newClients": 0,
+     "callLogs": 0,
+     "lifeInsurance": 0,
+     "healthInsurance": 0
+    },
+    "streams": [
+     {
+      "key": "netSales",
+      "label": "Net Sales",
+      "kind": "money",
+      "payout": "pctOfCredit",
+      "rateNote": "% of Net Credit",
+      "baseline": 1800000,
+      "baselineNote": "5 Times CTC",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -1800000,
+      "incentive": 0,
+      "floor": 2000000
+     },
+     {
+      "key": "freshSip",
+      "label": "Fresh SIP",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess SIP",
+      "baseline": 60000,
+      "baselineNote": "2 Times Monthly Salary",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -60000,
+      "incentive": 0,
+      "floor": 66666.66666666667
+     },
+     {
+      "key": "meetings",
+      "label": "Meetings",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess meeting",
+      "baseline": 25,
+      "baselineNote": "Daily One Meeting",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -25,
+      "incentive": 0,
+      "floor": 25
+     },
+     {
+      "key": "newClients",
+      "label": "New Clients",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess client",
+      "baseline": 5,
+      "baselineNote": "Monthly Target",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -5,
+      "incentive": 0,
+      "floor": 6
+     },
+     {
+      "key": "callLogs",
+      "label": "Call Logs",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess call",
+      "baseline": 250,
+      "baselineNote": "10 Calls a Day",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -250,
+      "incentive": 0,
+      "floor": 251
+     },
+     {
+      "key": "lifeInsurance",
+      "label": "Life insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh LIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     },
+     {
+      "key": "healthInsurance",
+      "label": "Health insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh GIP/HIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     }
+    ],
+    "problems": [],
+    "total": 0,
+    "slabBase": "matrix",
+    "slabCtc": 400000
+   },
+   "guard": "",
+   "alerts": [],
+   "confirms": []
+  },
+  {
+   "label": "edited",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ]
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "sales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-1",
+    "userId": "P1",
+    "month": "2026-10",
+    "kind": "sales",
+    "annualCtc": 420000,
+    "branch": "Pune",
+    "designation": "Relationship Executive",
+    "netSalesRows": [
+     {
+      "cat": "Mutual Fund",
+      "sub": "Equity",
+      "source": "Self",
+      "meeting": "Independent meeting",
+      "amount": 2400000
+     },
+     {
+      "cat": "Gold",
+      "sub": "",
+      "source": "",
+      "meeting": "",
+      "amount": 0
+     }
+    ],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [
+     {
+      "label": "All",
+      "n": 30
+     }
+    ],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Draft",
+    "snapshot": null,
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.698Z",
+    "createdBy": "HR1",
+    "updatedAt": "2026-11-21T11:35:12.702Z"
+   },
+   "kind": "sales",
+   "result": {
+    "basis": {
+     "ctc": 420000,
+     "monthly": 35000,
+     "slabCtc": 400000,
+     "slabMonthly": 33333.333333333336
+    },
+    "sections": {
+     "investment": [
+      {
+       "row": {
+        "cat": "Mutual Fund",
+        "sub": "Equity",
+        "source": "Self",
+        "meeting": "Independent meeting",
+        "amount": 2400000
+       },
+       "amount": 2400000,
+       "pcw": 1,
+       "lsw": 1.25,
+       "mw": 1,
+       "mult": 1.25,
+       "credit": 3000000,
+       "ok": true,
+       "problems": []
+      },
+      {
+       "row": {
+        "cat": "Gold",
+        "sub": "",
+        "source": "",
+        "meeting": "",
+        "amount": 0
+       },
+       "amount": 0,
+       "pcw": null,
+       "lsw": null,
+       "mw": null,
+       "mult": null,
+       "credit": null,
+       "ok": false,
+       "problems": [
+        "“Gold /” is not on the product credit list",
+        "“” is not a lead source on the list",
+        "“” is not a meeting type on the list"
+       ]
+      }
+     ],
+     "sip": [],
+     "insurance": []
+    },
+    "totals": {
+     "investment": {
+      "amount": 2400000,
+      "credit": 3000000,
+      "lines": 2,
+      "dropped": 1
+     },
+     "sip": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     },
+     "insurance": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     }
+    },
+    "premiumTotal": 0,
+    "credits": {
+     "netSales": 3000000,
+     "freshSip": 0,
+     "meetings": 30,
+     "newClients": 0,
+     "callLogs": 0,
+     "lifeInsurance": 0,
+     "healthInsurance": 0
+    },
+    "streams": [
+     {
+      "key": "netSales",
+      "label": "Net Sales",
+      "kind": "money",
+      "payout": "pctOfCredit",
+      "rateNote": "% of Net Credit",
+      "baseline": 2100000,
+      "baselineNote": "5 Times CTC",
+      "credit": 3000000,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Gold Slab",
+      "rate": 0.002,
+      "excess": 900000,
+      "incentive": 6000,
+      "floor": 2000000
+     },
+     {
+      "key": "freshSip",
+      "label": "Fresh SIP",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess SIP",
+      "baseline": 70000,
+      "baselineNote": "2 Times Monthly Salary",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -70000,
+      "incentive": 0,
+      "floor": 66666.66666666667
+     },
+     {
+      "key": "meetings",
+      "label": "Meetings",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess meeting",
+      "baseline": 25,
+      "baselineNote": "Daily One Meeting",
+      "credit": 30,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Silver Slab",
+      "rate": 100,
+      "excess": 5,
+      "incentive": 500,
+      "floor": 25
+     },
+     {
+      "key": "newClients",
+      "label": "New Clients",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess client",
+      "baseline": 5,
+      "baselineNote": "Monthly Target",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -5,
+      "incentive": 0,
+      "floor": 6
+     },
+     {
+      "key": "callLogs",
+      "label": "Call Logs",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess call",
+      "baseline": 250,
+      "baselineNote": "10 Calls a Day",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -250,
+      "incentive": 0,
+      "floor": 251
+     },
+     {
+      "key": "lifeInsurance",
+      "label": "Life insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh LIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     },
+     {
+      "key": "healthInsurance",
+      "label": "Health insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh GIP/HIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     }
+    ],
+    "problems": [
+     {
+      "section": "investment",
+      "line": 2,
+      "why": [
+       "“Gold /” is not on the product credit list",
+       "“” is not a lead source on the list",
+       "“” is not a meeting type on the list"
+      ]
+     }
+    ],
+    "total": 6500,
+    "slabBase": "matrix",
+    "slabCtc": 400000
+   },
+   "guard": "",
+   "alerts": [],
+   "confirms": []
+  },
+  {
+   "label": "finalise declined (problem line)",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ]
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "sales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-1",
+    "userId": "P1",
+    "month": "2026-10",
+    "kind": "sales",
+    "annualCtc": 420000,
+    "branch": "Pune",
+    "designation": "Relationship Executive",
+    "netSalesRows": [
+     {
+      "cat": "Mutual Fund",
+      "sub": "Equity",
+      "source": "Self",
+      "meeting": "Independent meeting",
+      "amount": 2400000
+     },
+     {
+      "cat": "Gold",
+      "sub": "",
+      "source": "",
+      "meeting": "",
+      "amount": 0
+     }
+    ],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [
+     {
+      "label": "All",
+      "n": 30
+     }
+    ],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Draft",
+    "snapshot": null,
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.698Z",
+    "createdBy": "HR1",
+    "updatedAt": "2026-11-21T11:35:12.702Z"
+   },
+   "kind": "sales",
+   "result": {
+    "basis": {
+     "ctc": 420000,
+     "monthly": 35000,
+     "slabCtc": 400000,
+     "slabMonthly": 33333.333333333336
+    },
+    "sections": {
+     "investment": [
+      {
+       "row": {
+        "cat": "Mutual Fund",
+        "sub": "Equity",
+        "source": "Self",
+        "meeting": "Independent meeting",
+        "amount": 2400000
+       },
+       "amount": 2400000,
+       "pcw": 1,
+       "lsw": 1.25,
+       "mw": 1,
+       "mult": 1.25,
+       "credit": 3000000,
+       "ok": true,
+       "problems": []
+      },
+      {
+       "row": {
+        "cat": "Gold",
+        "sub": "",
+        "source": "",
+        "meeting": "",
+        "amount": 0
+       },
+       "amount": 0,
+       "pcw": null,
+       "lsw": null,
+       "mw": null,
+       "mult": null,
+       "credit": null,
+       "ok": false,
+       "problems": [
+        "“Gold /” is not on the product credit list",
+        "“” is not a lead source on the list",
+        "“” is not a meeting type on the list"
+       ]
+      }
+     ],
+     "sip": [],
+     "insurance": []
+    },
+    "totals": {
+     "investment": {
+      "amount": 2400000,
+      "credit": 3000000,
+      "lines": 2,
+      "dropped": 1
+     },
+     "sip": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     },
+     "insurance": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     }
+    },
+    "premiumTotal": 0,
+    "credits": {
+     "netSales": 3000000,
+     "freshSip": 0,
+     "meetings": 30,
+     "newClients": 0,
+     "callLogs": 0,
+     "lifeInsurance": 0,
+     "healthInsurance": 0
+    },
+    "streams": [
+     {
+      "key": "netSales",
+      "label": "Net Sales",
+      "kind": "money",
+      "payout": "pctOfCredit",
+      "rateNote": "% of Net Credit",
+      "baseline": 2100000,
+      "baselineNote": "5 Times CTC",
+      "credit": 3000000,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Gold Slab",
+      "rate": 0.002,
+      "excess": 900000,
+      "incentive": 6000,
+      "floor": 2000000
+     },
+     {
+      "key": "freshSip",
+      "label": "Fresh SIP",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess SIP",
+      "baseline": 70000,
+      "baselineNote": "2 Times Monthly Salary",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -70000,
+      "incentive": 0,
+      "floor": 66666.66666666667
+     },
+     {
+      "key": "meetings",
+      "label": "Meetings",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess meeting",
+      "baseline": 25,
+      "baselineNote": "Daily One Meeting",
+      "credit": 30,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Silver Slab",
+      "rate": 100,
+      "excess": 5,
+      "incentive": 500,
+      "floor": 25
+     },
+     {
+      "key": "newClients",
+      "label": "New Clients",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess client",
+      "baseline": 5,
+      "baselineNote": "Monthly Target",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -5,
+      "incentive": 0,
+      "floor": 6
+     },
+     {
+      "key": "callLogs",
+      "label": "Call Logs",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess call",
+      "baseline": 250,
+      "baselineNote": "10 Calls a Day",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -250,
+      "incentive": 0,
+      "floor": 251
+     },
+     {
+      "key": "lifeInsurance",
+      "label": "Life insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh LIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     },
+     {
+      "key": "healthInsurance",
+      "label": "Health insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh GIP/HIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     }
+    ],
+    "problems": [
+     {
+      "section": "investment",
+      "line": 2,
+      "why": [
+       "“Gold /” is not on the product credit list",
+       "“” is not a lead source on the list",
+       "“” is not a meeting type on the list"
+      ]
+     }
+    ],
+    "total": 6500,
+    "slabBase": "matrix",
+    "slabCtc": 400000
+   },
+   "guard": "",
+   "alerts": [],
+   "confirms": [
+    "1 line(s) could not be credited and will be left out of the total, exactly as the workbook leaves them out. Finalise anyway?"
+   ]
+  },
+  {
+   "label": "finalised",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ]
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "sales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-1",
+    "userId": "P1",
+    "month": "2026-10",
+    "kind": "sales",
+    "annualCtc": 420000,
+    "branch": "Pune",
+    "designation": "Relationship Executive",
+    "netSalesRows": [
+     {
+      "cat": "Mutual Fund",
+      "sub": "Equity",
+      "source": "Self",
+      "meeting": "Independent meeting",
+      "amount": 2400000
+     },
+     {
+      "cat": "Gold",
+      "sub": "",
+      "source": "",
+      "meeting": "",
+      "amount": 0
+     }
+    ],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [
+     {
+      "label": "All",
+      "n": 30
+     }
+    ],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Finalised",
+    "snapshot": {
+     "basis": {
+      "ctc": 420000,
+      "monthly": 35000,
+      "slabCtc": 400000,
+      "slabMonthly": 33333.333333333336
+     },
+     "sections": {
+      "investment": [
+       {
+        "row": {
+         "cat": "Mutual Fund",
+         "sub": "Equity",
+         "source": "Self",
+         "meeting": "Independent meeting",
+         "amount": 2400000
+        },
+        "amount": 2400000,
+        "pcw": 1,
+        "lsw": 1.25,
+        "mw": 1,
+        "mult": 1.25,
+        "credit": 3000000,
+        "ok": true,
+        "problems": []
+       },
+       {
+        "row": {
+         "cat": "Gold",
+         "sub": "",
+         "source": "",
+         "meeting": "",
+         "amount": 0
+        },
+        "amount": 0,
+        "pcw": null,
+        "lsw": null,
+        "mw": null,
+        "mult": null,
+        "credit": null,
+        "ok": false,
+        "problems": [
+         "“Gold /” is not on the product credit list",
+         "“” is not a lead source on the list",
+         "“” is not a meeting type on the list"
+        ]
+       }
+      ],
+      "sip": [],
+      "insurance": []
+     },
+     "totals": {
+      "investment": {
+       "amount": 2400000,
+       "credit": 3000000,
+       "lines": 2,
+       "dropped": 1
+      },
+      "sip": {
+       "amount": 0,
+       "credit": 0,
+       "lines": 0,
+       "dropped": 0
+      },
+      "insurance": {
+       "amount": 0,
+       "credit": 0,
+       "lines": 0,
+       "dropped": 0
+      }
+     },
+     "premiumTotal": 0,
+     "credits": {
+      "netSales": 3000000,
+      "freshSip": 0,
+      "meetings": 30,
+      "newClients": 0,
+      "callLogs": 0,
+      "lifeInsurance": 0,
+      "healthInsurance": 0
+     },
+     "streams": [
+      {
+       "key": "netSales",
+       "label": "Net Sales",
+       "kind": "money",
+       "payout": "pctOfCredit",
+       "rateNote": "% of Net Credit",
+       "baseline": 2100000,
+       "baselineNote": "5 Times CTC",
+       "credit": 3000000,
+       "qualified": true,
+       "belowLowest": false,
+       "slab": "Gold Slab",
+       "rate": 0.002,
+       "excess": 900000,
+       "incentive": 6000,
+       "floor": 2000000
+      },
+      {
+       "key": "freshSip",
+       "label": "Fresh SIP",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess SIP",
+       "baseline": 70000,
+       "baselineNote": "2 Times Monthly Salary",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -70000,
+       "incentive": 0,
+       "floor": 66666.66666666667
+      },
+      {
+       "key": "meetings",
+       "label": "Meetings",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess meeting",
+       "baseline": 25,
+       "baselineNote": "Daily One Meeting",
+       "credit": 30,
+       "qualified": true,
+       "belowLowest": false,
+       "slab": "Silver Slab",
+       "rate": 100,
+       "excess": 5,
+       "incentive": 500,
+       "floor": 25
+      },
+      {
+       "key": "newClients",
+       "label": "New Clients",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess client",
+       "baseline": 5,
+       "baselineNote": "Monthly Target",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -5,
+       "incentive": 0,
+       "floor": 6
+      },
+      {
+       "key": "callLogs",
+       "label": "Call Logs",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess call",
+       "baseline": 250,
+       "baselineNote": "10 Calls a Day",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -250,
+       "incentive": 0,
+       "floor": 251
+      },
+      {
+       "key": "lifeInsurance",
+       "label": "Life insurance",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess premium",
+       "baseline": 10000,
+       "baselineNote": "Fresh LIP",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -10000,
+       "incentive": 0,
+       "floor": 10000
+      },
+      {
+       "key": "healthInsurance",
+       "label": "Health insurance",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess premium",
+       "baseline": 10000,
+       "baselineNote": "Fresh GIP/HIP",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -10000,
+       "incentive": 0,
+       "floor": 10000
+      }
+     ],
+     "problems": [
+      {
+       "section": "investment",
+       "line": 2,
+       "why": [
+        "“Gold /” is not on the product credit list",
+        "“” is not a lead source on the list",
+        "“” is not a meeting type on the list"
+       ]
+      }
+     ],
+     "total": 6500,
+     "slabBase": "matrix",
+     "slabCtc": 400000
+    },
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.698Z",
+    "createdBy": "HR1",
+    "updatedAt": "2026-11-21T11:35:12.702Z",
+    "finalisedAt": "2026-11-21T11:35:12.703Z",
+    "finalisedBy": "HR1",
+    "finalTotal": 6500
+   },
+   "kind": "sales",
+   "result": {
+    "basis": {
+     "ctc": 420000,
+     "monthly": 35000,
+     "slabCtc": 400000,
+     "slabMonthly": 33333.333333333336
+    },
+    "sections": {
+     "investment": [
+      {
+       "row": {
+        "cat": "Mutual Fund",
+        "sub": "Equity",
+        "source": "Self",
+        "meeting": "Independent meeting",
+        "amount": 2400000
+       },
+       "amount": 2400000,
+       "pcw": 1,
+       "lsw": 1.25,
+       "mw": 1,
+       "mult": 1.25,
+       "credit": 3000000,
+       "ok": true,
+       "problems": []
+      },
+      {
+       "row": {
+        "cat": "Gold",
+        "sub": "",
+        "source": "",
+        "meeting": "",
+        "amount": 0
+       },
+       "amount": 0,
+       "pcw": null,
+       "lsw": null,
+       "mw": null,
+       "mult": null,
+       "credit": null,
+       "ok": false,
+       "problems": [
+        "“Gold /” is not on the product credit list",
+        "“” is not a lead source on the list",
+        "“” is not a meeting type on the list"
+       ]
+      }
+     ],
+     "sip": [],
+     "insurance": []
+    },
+    "totals": {
+     "investment": {
+      "amount": 2400000,
+      "credit": 3000000,
+      "lines": 2,
+      "dropped": 1
+     },
+     "sip": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     },
+     "insurance": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     }
+    },
+    "premiumTotal": 0,
+    "credits": {
+     "netSales": 3000000,
+     "freshSip": 0,
+     "meetings": 30,
+     "newClients": 0,
+     "callLogs": 0,
+     "lifeInsurance": 0,
+     "healthInsurance": 0
+    },
+    "streams": [
+     {
+      "key": "netSales",
+      "label": "Net Sales",
+      "kind": "money",
+      "payout": "pctOfCredit",
+      "rateNote": "% of Net Credit",
+      "baseline": 2100000,
+      "baselineNote": "5 Times CTC",
+      "credit": 3000000,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Gold Slab",
+      "rate": 0.002,
+      "excess": 900000,
+      "incentive": 6000,
+      "floor": 2000000
+     },
+     {
+      "key": "freshSip",
+      "label": "Fresh SIP",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess SIP",
+      "baseline": 70000,
+      "baselineNote": "2 Times Monthly Salary",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -70000,
+      "incentive": 0,
+      "floor": 66666.66666666667
+     },
+     {
+      "key": "meetings",
+      "label": "Meetings",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess meeting",
+      "baseline": 25,
+      "baselineNote": "Daily One Meeting",
+      "credit": 30,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Silver Slab",
+      "rate": 100,
+      "excess": 5,
+      "incentive": 500,
+      "floor": 25
+     },
+     {
+      "key": "newClients",
+      "label": "New Clients",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess client",
+      "baseline": 5,
+      "baselineNote": "Monthly Target",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -5,
+      "incentive": 0,
+      "floor": 6
+     },
+     {
+      "key": "callLogs",
+      "label": "Call Logs",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess call",
+      "baseline": 250,
+      "baselineNote": "10 Calls a Day",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -250,
+      "incentive": 0,
+      "floor": 251
+     },
+     {
+      "key": "lifeInsurance",
+      "label": "Life insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh LIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     },
+     {
+      "key": "healthInsurance",
+      "label": "Health insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh GIP/HIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     }
+    ],
+    "problems": [
+     {
+      "section": "investment",
+      "line": 2,
+      "why": [
+       "“Gold /” is not on the product credit list",
+       "“” is not a lead source on the list",
+       "“” is not a meeting type on the list"
+      ]
+     }
+    ],
+    "total": 6500,
+    "slabBase": "matrix",
+    "slabCtc": 400000
+   },
+   "guard": "This month is finalised. Reopen it first.",
+   "alerts": [],
+   "confirms": [
+    "1 line(s) could not be credited and will be left out of the total, exactly as the workbook leaves them out. Finalise anyway?"
+   ]
+  },
+  {
+   "label": "finalised then edits refused",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ]
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "sales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-1",
+    "userId": "P1",
+    "month": "2026-10",
+    "kind": "sales",
+    "annualCtc": 420000,
+    "branch": "Pune",
+    "designation": "Relationship Executive",
+    "netSalesRows": [
+     {
+      "cat": "Mutual Fund",
+      "sub": "Equity",
+      "source": "Self",
+      "meeting": "Independent meeting",
+      "amount": 2400000
+     },
+     {
+      "cat": "Gold",
+      "sub": "",
+      "source": "",
+      "meeting": "",
+      "amount": 0
+     }
+    ],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [
+     {
+      "label": "All",
+      "n": 30
+     }
+    ],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Finalised",
+    "snapshot": {
+     "basis": {
+      "ctc": 420000,
+      "monthly": 35000,
+      "slabCtc": 400000,
+      "slabMonthly": 33333.333333333336
+     },
+     "sections": {
+      "investment": [
+       {
+        "row": {
+         "cat": "Mutual Fund",
+         "sub": "Equity",
+         "source": "Self",
+         "meeting": "Independent meeting",
+         "amount": 2400000
+        },
+        "amount": 2400000,
+        "pcw": 1,
+        "lsw": 1.25,
+        "mw": 1,
+        "mult": 1.25,
+        "credit": 3000000,
+        "ok": true,
+        "problems": []
+       },
+       {
+        "row": {
+         "cat": "Gold",
+         "sub": "",
+         "source": "",
+         "meeting": "",
+         "amount": 0
+        },
+        "amount": 0,
+        "pcw": null,
+        "lsw": null,
+        "mw": null,
+        "mult": null,
+        "credit": null,
+        "ok": false,
+        "problems": [
+         "“Gold /” is not on the product credit list",
+         "“” is not a lead source on the list",
+         "“” is not a meeting type on the list"
+        ]
+       }
+      ],
+      "sip": [],
+      "insurance": []
+     },
+     "totals": {
+      "investment": {
+       "amount": 2400000,
+       "credit": 3000000,
+       "lines": 2,
+       "dropped": 1
+      },
+      "sip": {
+       "amount": 0,
+       "credit": 0,
+       "lines": 0,
+       "dropped": 0
+      },
+      "insurance": {
+       "amount": 0,
+       "credit": 0,
+       "lines": 0,
+       "dropped": 0
+      }
+     },
+     "premiumTotal": 0,
+     "credits": {
+      "netSales": 3000000,
+      "freshSip": 0,
+      "meetings": 30,
+      "newClients": 0,
+      "callLogs": 0,
+      "lifeInsurance": 0,
+      "healthInsurance": 0
+     },
+     "streams": [
+      {
+       "key": "netSales",
+       "label": "Net Sales",
+       "kind": "money",
+       "payout": "pctOfCredit",
+       "rateNote": "% of Net Credit",
+       "baseline": 2100000,
+       "baselineNote": "5 Times CTC",
+       "credit": 3000000,
+       "qualified": true,
+       "belowLowest": false,
+       "slab": "Gold Slab",
+       "rate": 0.002,
+       "excess": 900000,
+       "incentive": 6000,
+       "floor": 2000000
+      },
+      {
+       "key": "freshSip",
+       "label": "Fresh SIP",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess SIP",
+       "baseline": 70000,
+       "baselineNote": "2 Times Monthly Salary",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -70000,
+       "incentive": 0,
+       "floor": 66666.66666666667
+      },
+      {
+       "key": "meetings",
+       "label": "Meetings",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess meeting",
+       "baseline": 25,
+       "baselineNote": "Daily One Meeting",
+       "credit": 30,
+       "qualified": true,
+       "belowLowest": false,
+       "slab": "Silver Slab",
+       "rate": 100,
+       "excess": 5,
+       "incentive": 500,
+       "floor": 25
+      },
+      {
+       "key": "newClients",
+       "label": "New Clients",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess client",
+       "baseline": 5,
+       "baselineNote": "Monthly Target",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -5,
+       "incentive": 0,
+       "floor": 6
+      },
+      {
+       "key": "callLogs",
+       "label": "Call Logs",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess call",
+       "baseline": 250,
+       "baselineNote": "10 Calls a Day",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -250,
+       "incentive": 0,
+       "floor": 251
+      },
+      {
+       "key": "lifeInsurance",
+       "label": "Life insurance",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess premium",
+       "baseline": 10000,
+       "baselineNote": "Fresh LIP",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -10000,
+       "incentive": 0,
+       "floor": 10000
+      },
+      {
+       "key": "healthInsurance",
+       "label": "Health insurance",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess premium",
+       "baseline": 10000,
+       "baselineNote": "Fresh GIP/HIP",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -10000,
+       "incentive": 0,
+       "floor": 10000
+      }
+     ],
+     "problems": [
+      {
+       "section": "investment",
+       "line": 2,
+       "why": [
+        "“Gold /” is not on the product credit list",
+        "“” is not a lead source on the list",
+        "“” is not a meeting type on the list"
+       ]
+      }
+     ],
+     "total": 6500,
+     "slabBase": "matrix",
+     "slabCtc": 400000
+    },
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.698Z",
+    "createdBy": "HR1",
+    "updatedAt": "2026-11-21T11:35:12.702Z",
+    "finalisedAt": "2026-11-21T11:35:12.703Z",
+    "finalisedBy": "HR1",
+    "finalTotal": 6500
+   },
+   "kind": "sales",
+   "result": {
+    "basis": {
+     "ctc": 420000,
+     "monthly": 35000,
+     "slabCtc": 400000,
+     "slabMonthly": 33333.333333333336
+    },
+    "sections": {
+     "investment": [
+      {
+       "row": {
+        "cat": "Mutual Fund",
+        "sub": "Equity",
+        "source": "Self",
+        "meeting": "Independent meeting",
+        "amount": 2400000
+       },
+       "amount": 2400000,
+       "pcw": 1,
+       "lsw": 1.25,
+       "mw": 1,
+       "mult": 1.25,
+       "credit": 3000000,
+       "ok": true,
+       "problems": []
+      },
+      {
+       "row": {
+        "cat": "Gold",
+        "sub": "",
+        "source": "",
+        "meeting": "",
+        "amount": 0
+       },
+       "amount": 0,
+       "pcw": null,
+       "lsw": null,
+       "mw": null,
+       "mult": null,
+       "credit": null,
+       "ok": false,
+       "problems": [
+        "“Gold /” is not on the product credit list",
+        "“” is not a lead source on the list",
+        "“” is not a meeting type on the list"
+       ]
+      }
+     ],
+     "sip": [],
+     "insurance": []
+    },
+    "totals": {
+     "investment": {
+      "amount": 2400000,
+      "credit": 3000000,
+      "lines": 2,
+      "dropped": 1
+     },
+     "sip": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     },
+     "insurance": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     }
+    },
+    "premiumTotal": 0,
+    "credits": {
+     "netSales": 3000000,
+     "freshSip": 0,
+     "meetings": 30,
+     "newClients": 0,
+     "callLogs": 0,
+     "lifeInsurance": 0,
+     "healthInsurance": 0
+    },
+    "streams": [
+     {
+      "key": "netSales",
+      "label": "Net Sales",
+      "kind": "money",
+      "payout": "pctOfCredit",
+      "rateNote": "% of Net Credit",
+      "baseline": 2100000,
+      "baselineNote": "5 Times CTC",
+      "credit": 3000000,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Gold Slab",
+      "rate": 0.002,
+      "excess": 900000,
+      "incentive": 6000,
+      "floor": 2000000
+     },
+     {
+      "key": "freshSip",
+      "label": "Fresh SIP",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess SIP",
+      "baseline": 70000,
+      "baselineNote": "2 Times Monthly Salary",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -70000,
+      "incentive": 0,
+      "floor": 66666.66666666667
+     },
+     {
+      "key": "meetings",
+      "label": "Meetings",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess meeting",
+      "baseline": 25,
+      "baselineNote": "Daily One Meeting",
+      "credit": 30,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Silver Slab",
+      "rate": 100,
+      "excess": 5,
+      "incentive": 500,
+      "floor": 25
+     },
+     {
+      "key": "newClients",
+      "label": "New Clients",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess client",
+      "baseline": 5,
+      "baselineNote": "Monthly Target",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -5,
+      "incentive": 0,
+      "floor": 6
+     },
+     {
+      "key": "callLogs",
+      "label": "Call Logs",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess call",
+      "baseline": 250,
+      "baselineNote": "10 Calls a Day",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -250,
+      "incentive": 0,
+      "floor": 251
+     },
+     {
+      "key": "lifeInsurance",
+      "label": "Life insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh LIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     },
+     {
+      "key": "healthInsurance",
+      "label": "Health insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh GIP/HIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     }
+    ],
+    "problems": [
+     {
+      "section": "investment",
+      "line": 2,
+      "why": [
+       "“Gold /” is not on the product credit list",
+       "“” is not a lead source on the list",
+       "“” is not a meeting type on the list"
+      ]
+     }
+    ],
+    "total": 6500,
+    "slabBase": "matrix",
+    "slabCtc": 400000
+   },
+   "guard": "This month is finalised. Reopen it first.",
+   "alerts": [
+    "It is already finalised.",
+    "This month is finalised. Reopen it first.",
+    "This month is finalised. Reopen it first.",
+    "This month is finalised. Reopen it first."
+   ],
+   "confirms": []
+  },
+  {
+   "label": "finalised keeps snapshot after config change",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ],
+    "slabBase": "individual"
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "sales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-1",
+    "userId": "P1",
+    "month": "2026-10",
+    "kind": "sales",
+    "annualCtc": 420000,
+    "branch": "Pune",
+    "designation": "Relationship Executive",
+    "netSalesRows": [
+     {
+      "cat": "Mutual Fund",
+      "sub": "Equity",
+      "source": "Self",
+      "meeting": "Independent meeting",
+      "amount": 2400000
+     },
+     {
+      "cat": "Gold",
+      "sub": "",
+      "source": "",
+      "meeting": "",
+      "amount": 0
+     }
+    ],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [
+     {
+      "label": "All",
+      "n": 30
+     }
+    ],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Finalised",
+    "snapshot": {
+     "basis": {
+      "ctc": 420000,
+      "monthly": 35000,
+      "slabCtc": 400000,
+      "slabMonthly": 33333.333333333336
+     },
+     "sections": {
+      "investment": [
+       {
+        "row": {
+         "cat": "Mutual Fund",
+         "sub": "Equity",
+         "source": "Self",
+         "meeting": "Independent meeting",
+         "amount": 2400000
+        },
+        "amount": 2400000,
+        "pcw": 1,
+        "lsw": 1.25,
+        "mw": 1,
+        "mult": 1.25,
+        "credit": 3000000,
+        "ok": true,
+        "problems": []
+       },
+       {
+        "row": {
+         "cat": "Gold",
+         "sub": "",
+         "source": "",
+         "meeting": "",
+         "amount": 0
+        },
+        "amount": 0,
+        "pcw": null,
+        "lsw": null,
+        "mw": null,
+        "mult": null,
+        "credit": null,
+        "ok": false,
+        "problems": [
+         "“Gold /” is not on the product credit list",
+         "“” is not a lead source on the list",
+         "“” is not a meeting type on the list"
+        ]
+       }
+      ],
+      "sip": [],
+      "insurance": []
+     },
+     "totals": {
+      "investment": {
+       "amount": 2400000,
+       "credit": 3000000,
+       "lines": 2,
+       "dropped": 1
+      },
+      "sip": {
+       "amount": 0,
+       "credit": 0,
+       "lines": 0,
+       "dropped": 0
+      },
+      "insurance": {
+       "amount": 0,
+       "credit": 0,
+       "lines": 0,
+       "dropped": 0
+      }
+     },
+     "premiumTotal": 0,
+     "credits": {
+      "netSales": 3000000,
+      "freshSip": 0,
+      "meetings": 30,
+      "newClients": 0,
+      "callLogs": 0,
+      "lifeInsurance": 0,
+      "healthInsurance": 0
+     },
+     "streams": [
+      {
+       "key": "netSales",
+       "label": "Net Sales",
+       "kind": "money",
+       "payout": "pctOfCredit",
+       "rateNote": "% of Net Credit",
+       "baseline": 2100000,
+       "baselineNote": "5 Times CTC",
+       "credit": 3000000,
+       "qualified": true,
+       "belowLowest": false,
+       "slab": "Gold Slab",
+       "rate": 0.002,
+       "excess": 900000,
+       "incentive": 6000,
+       "floor": 2000000
+      },
+      {
+       "key": "freshSip",
+       "label": "Fresh SIP",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess SIP",
+       "baseline": 70000,
+       "baselineNote": "2 Times Monthly Salary",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -70000,
+       "incentive": 0,
+       "floor": 66666.66666666667
+      },
+      {
+       "key": "meetings",
+       "label": "Meetings",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess meeting",
+       "baseline": 25,
+       "baselineNote": "Daily One Meeting",
+       "credit": 30,
+       "qualified": true,
+       "belowLowest": false,
+       "slab": "Silver Slab",
+       "rate": 100,
+       "excess": 5,
+       "incentive": 500,
+       "floor": 25
+      },
+      {
+       "key": "newClients",
+       "label": "New Clients",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess client",
+       "baseline": 5,
+       "baselineNote": "Monthly Target",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -5,
+       "incentive": 0,
+       "floor": 6
+      },
+      {
+       "key": "callLogs",
+       "label": "Call Logs",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess call",
+       "baseline": 250,
+       "baselineNote": "10 Calls a Day",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -250,
+       "incentive": 0,
+       "floor": 251
+      },
+      {
+       "key": "lifeInsurance",
+       "label": "Life insurance",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess premium",
+       "baseline": 10000,
+       "baselineNote": "Fresh LIP",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -10000,
+       "incentive": 0,
+       "floor": 10000
+      },
+      {
+       "key": "healthInsurance",
+       "label": "Health insurance",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess premium",
+       "baseline": 10000,
+       "baselineNote": "Fresh GIP/HIP",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -10000,
+       "incentive": 0,
+       "floor": 10000
+      }
+     ],
+     "problems": [
+      {
+       "section": "investment",
+       "line": 2,
+       "why": [
+        "“Gold /” is not on the product credit list",
+        "“” is not a lead source on the list",
+        "“” is not a meeting type on the list"
+       ]
+      }
+     ],
+     "total": 6500,
+     "slabBase": "matrix",
+     "slabCtc": 400000
+    },
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.698Z",
+    "createdBy": "HR1",
+    "updatedAt": "2026-11-21T11:35:12.702Z",
+    "finalisedAt": "2026-11-21T11:35:12.703Z",
+    "finalisedBy": "HR1",
+    "finalTotal": 6500
+   },
+   "kind": "sales",
+   "result": {
+    "basis": {
+     "ctc": 420000,
+     "monthly": 35000,
+     "slabCtc": 400000,
+     "slabMonthly": 33333.333333333336
+    },
+    "sections": {
+     "investment": [
+      {
+       "row": {
+        "cat": "Mutual Fund",
+        "sub": "Equity",
+        "source": "Self",
+        "meeting": "Independent meeting",
+        "amount": 2400000
+       },
+       "amount": 2400000,
+       "pcw": 1,
+       "lsw": 1.25,
+       "mw": 1,
+       "mult": 1.25,
+       "credit": 3000000,
+       "ok": true,
+       "problems": []
+      },
+      {
+       "row": {
+        "cat": "Gold",
+        "sub": "",
+        "source": "",
+        "meeting": "",
+        "amount": 0
+       },
+       "amount": 0,
+       "pcw": null,
+       "lsw": null,
+       "mw": null,
+       "mult": null,
+       "credit": null,
+       "ok": false,
+       "problems": [
+        "“Gold /” is not on the product credit list",
+        "“” is not a lead source on the list",
+        "“” is not a meeting type on the list"
+       ]
+      }
+     ],
+     "sip": [],
+     "insurance": []
+    },
+    "totals": {
+     "investment": {
+      "amount": 2400000,
+      "credit": 3000000,
+      "lines": 2,
+      "dropped": 1
+     },
+     "sip": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     },
+     "insurance": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     }
+    },
+    "premiumTotal": 0,
+    "credits": {
+     "netSales": 3000000,
+     "freshSip": 0,
+     "meetings": 30,
+     "newClients": 0,
+     "callLogs": 0,
+     "lifeInsurance": 0,
+     "healthInsurance": 0
+    },
+    "streams": [
+     {
+      "key": "netSales",
+      "label": "Net Sales",
+      "kind": "money",
+      "payout": "pctOfCredit",
+      "rateNote": "% of Net Credit",
+      "baseline": 2100000,
+      "baselineNote": "5 Times CTC",
+      "credit": 3000000,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Gold Slab",
+      "rate": 0.002,
+      "excess": 900000,
+      "incentive": 6000,
+      "floor": 2000000
+     },
+     {
+      "key": "freshSip",
+      "label": "Fresh SIP",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess SIP",
+      "baseline": 70000,
+      "baselineNote": "2 Times Monthly Salary",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -70000,
+      "incentive": 0,
+      "floor": 66666.66666666667
+     },
+     {
+      "key": "meetings",
+      "label": "Meetings",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess meeting",
+      "baseline": 25,
+      "baselineNote": "Daily One Meeting",
+      "credit": 30,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Silver Slab",
+      "rate": 100,
+      "excess": 5,
+      "incentive": 500,
+      "floor": 25
+     },
+     {
+      "key": "newClients",
+      "label": "New Clients",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess client",
+      "baseline": 5,
+      "baselineNote": "Monthly Target",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -5,
+      "incentive": 0,
+      "floor": 6
+     },
+     {
+      "key": "callLogs",
+      "label": "Call Logs",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess call",
+      "baseline": 250,
+      "baselineNote": "10 Calls a Day",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -250,
+      "incentive": 0,
+      "floor": 251
+     },
+     {
+      "key": "lifeInsurance",
+      "label": "Life insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh LIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     },
+     {
+      "key": "healthInsurance",
+      "label": "Health insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh GIP/HIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     }
+    ],
+    "problems": [
+     {
+      "section": "investment",
+      "line": 2,
+      "why": [
+       "“Gold /” is not on the product credit list",
+       "“” is not a lead source on the list",
+       "“” is not a meeting type on the list"
+      ]
+     }
+    ],
+    "total": 6500,
+    "slabBase": "matrix",
+    "slabCtc": 400000
+   },
+   "guard": "This month is finalised. Reopen it first.",
+   "alerts": [],
+   "confirms": []
+  },
+  {
+   "label": "reopen declined",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ],
+    "slabBase": "individual"
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "sales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-1",
+    "userId": "P1",
+    "month": "2026-10",
+    "kind": "sales",
+    "annualCtc": 420000,
+    "branch": "Pune",
+    "designation": "Relationship Executive",
+    "netSalesRows": [
+     {
+      "cat": "Mutual Fund",
+      "sub": "Equity",
+      "source": "Self",
+      "meeting": "Independent meeting",
+      "amount": 2400000
+     },
+     {
+      "cat": "Gold",
+      "sub": "",
+      "source": "",
+      "meeting": "",
+      "amount": 0
+     }
+    ],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [
+     {
+      "label": "All",
+      "n": 30
+     }
+    ],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Finalised",
+    "snapshot": {
+     "basis": {
+      "ctc": 420000,
+      "monthly": 35000,
+      "slabCtc": 400000,
+      "slabMonthly": 33333.333333333336
+     },
+     "sections": {
+      "investment": [
+       {
+        "row": {
+         "cat": "Mutual Fund",
+         "sub": "Equity",
+         "source": "Self",
+         "meeting": "Independent meeting",
+         "amount": 2400000
+        },
+        "amount": 2400000,
+        "pcw": 1,
+        "lsw": 1.25,
+        "mw": 1,
+        "mult": 1.25,
+        "credit": 3000000,
+        "ok": true,
+        "problems": []
+       },
+       {
+        "row": {
+         "cat": "Gold",
+         "sub": "",
+         "source": "",
+         "meeting": "",
+         "amount": 0
+        },
+        "amount": 0,
+        "pcw": null,
+        "lsw": null,
+        "mw": null,
+        "mult": null,
+        "credit": null,
+        "ok": false,
+        "problems": [
+         "“Gold /” is not on the product credit list",
+         "“” is not a lead source on the list",
+         "“” is not a meeting type on the list"
+        ]
+       }
+      ],
+      "sip": [],
+      "insurance": []
+     },
+     "totals": {
+      "investment": {
+       "amount": 2400000,
+       "credit": 3000000,
+       "lines": 2,
+       "dropped": 1
+      },
+      "sip": {
+       "amount": 0,
+       "credit": 0,
+       "lines": 0,
+       "dropped": 0
+      },
+      "insurance": {
+       "amount": 0,
+       "credit": 0,
+       "lines": 0,
+       "dropped": 0
+      }
+     },
+     "premiumTotal": 0,
+     "credits": {
+      "netSales": 3000000,
+      "freshSip": 0,
+      "meetings": 30,
+      "newClients": 0,
+      "callLogs": 0,
+      "lifeInsurance": 0,
+      "healthInsurance": 0
+     },
+     "streams": [
+      {
+       "key": "netSales",
+       "label": "Net Sales",
+       "kind": "money",
+       "payout": "pctOfCredit",
+       "rateNote": "% of Net Credit",
+       "baseline": 2100000,
+       "baselineNote": "5 Times CTC",
+       "credit": 3000000,
+       "qualified": true,
+       "belowLowest": false,
+       "slab": "Gold Slab",
+       "rate": 0.002,
+       "excess": 900000,
+       "incentive": 6000,
+       "floor": 2000000
+      },
+      {
+       "key": "freshSip",
+       "label": "Fresh SIP",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess SIP",
+       "baseline": 70000,
+       "baselineNote": "2 Times Monthly Salary",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -70000,
+       "incentive": 0,
+       "floor": 66666.66666666667
+      },
+      {
+       "key": "meetings",
+       "label": "Meetings",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess meeting",
+       "baseline": 25,
+       "baselineNote": "Daily One Meeting",
+       "credit": 30,
+       "qualified": true,
+       "belowLowest": false,
+       "slab": "Silver Slab",
+       "rate": 100,
+       "excess": 5,
+       "incentive": 500,
+       "floor": 25
+      },
+      {
+       "key": "newClients",
+       "label": "New Clients",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess client",
+       "baseline": 5,
+       "baselineNote": "Monthly Target",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -5,
+       "incentive": 0,
+       "floor": 6
+      },
+      {
+       "key": "callLogs",
+       "label": "Call Logs",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess call",
+       "baseline": 250,
+       "baselineNote": "10 Calls a Day",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -250,
+       "incentive": 0,
+       "floor": 251
+      },
+      {
+       "key": "lifeInsurance",
+       "label": "Life insurance",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess premium",
+       "baseline": 10000,
+       "baselineNote": "Fresh LIP",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -10000,
+       "incentive": 0,
+       "floor": 10000
+      },
+      {
+       "key": "healthInsurance",
+       "label": "Health insurance",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess premium",
+       "baseline": 10000,
+       "baselineNote": "Fresh GIP/HIP",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -10000,
+       "incentive": 0,
+       "floor": 10000
+      }
+     ],
+     "problems": [
+      {
+       "section": "investment",
+       "line": 2,
+       "why": [
+        "“Gold /” is not on the product credit list",
+        "“” is not a lead source on the list",
+        "“” is not a meeting type on the list"
+       ]
+      }
+     ],
+     "total": 6500,
+     "slabBase": "matrix",
+     "slabCtc": 400000
+    },
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.698Z",
+    "createdBy": "HR1",
+    "updatedAt": "2026-11-21T11:35:12.702Z",
+    "finalisedAt": "2026-11-21T11:35:12.703Z",
+    "finalisedBy": "HR1",
+    "finalTotal": 6500
+   },
+   "kind": "sales",
+   "result": {
+    "basis": {
+     "ctc": 420000,
+     "monthly": 35000,
+     "slabCtc": 400000,
+     "slabMonthly": 33333.333333333336
+    },
+    "sections": {
+     "investment": [
+      {
+       "row": {
+        "cat": "Mutual Fund",
+        "sub": "Equity",
+        "source": "Self",
+        "meeting": "Independent meeting",
+        "amount": 2400000
+       },
+       "amount": 2400000,
+       "pcw": 1,
+       "lsw": 1.25,
+       "mw": 1,
+       "mult": 1.25,
+       "credit": 3000000,
+       "ok": true,
+       "problems": []
+      },
+      {
+       "row": {
+        "cat": "Gold",
+        "sub": "",
+        "source": "",
+        "meeting": "",
+        "amount": 0
+       },
+       "amount": 0,
+       "pcw": null,
+       "lsw": null,
+       "mw": null,
+       "mult": null,
+       "credit": null,
+       "ok": false,
+       "problems": [
+        "“Gold /” is not on the product credit list",
+        "“” is not a lead source on the list",
+        "“” is not a meeting type on the list"
+       ]
+      }
+     ],
+     "sip": [],
+     "insurance": []
+    },
+    "totals": {
+     "investment": {
+      "amount": 2400000,
+      "credit": 3000000,
+      "lines": 2,
+      "dropped": 1
+     },
+     "sip": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     },
+     "insurance": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     }
+    },
+    "premiumTotal": 0,
+    "credits": {
+     "netSales": 3000000,
+     "freshSip": 0,
+     "meetings": 30,
+     "newClients": 0,
+     "callLogs": 0,
+     "lifeInsurance": 0,
+     "healthInsurance": 0
+    },
+    "streams": [
+     {
+      "key": "netSales",
+      "label": "Net Sales",
+      "kind": "money",
+      "payout": "pctOfCredit",
+      "rateNote": "% of Net Credit",
+      "baseline": 2100000,
+      "baselineNote": "5 Times CTC",
+      "credit": 3000000,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Gold Slab",
+      "rate": 0.002,
+      "excess": 900000,
+      "incentive": 6000,
+      "floor": 2000000
+     },
+     {
+      "key": "freshSip",
+      "label": "Fresh SIP",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess SIP",
+      "baseline": 70000,
+      "baselineNote": "2 Times Monthly Salary",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -70000,
+      "incentive": 0,
+      "floor": 66666.66666666667
+     },
+     {
+      "key": "meetings",
+      "label": "Meetings",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess meeting",
+      "baseline": 25,
+      "baselineNote": "Daily One Meeting",
+      "credit": 30,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Silver Slab",
+      "rate": 100,
+      "excess": 5,
+      "incentive": 500,
+      "floor": 25
+     },
+     {
+      "key": "newClients",
+      "label": "New Clients",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess client",
+      "baseline": 5,
+      "baselineNote": "Monthly Target",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -5,
+      "incentive": 0,
+      "floor": 6
+     },
+     {
+      "key": "callLogs",
+      "label": "Call Logs",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess call",
+      "baseline": 250,
+      "baselineNote": "10 Calls a Day",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -250,
+      "incentive": 0,
+      "floor": 251
+     },
+     {
+      "key": "lifeInsurance",
+      "label": "Life insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh LIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     },
+     {
+      "key": "healthInsurance",
+      "label": "Health insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh GIP/HIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     }
+    ],
+    "problems": [
+     {
+      "section": "investment",
+      "line": 2,
+      "why": [
+       "“Gold /” is not on the product credit list",
+       "“” is not a lead source on the list",
+       "“” is not a meeting type on the list"
+      ]
+     }
+    ],
+    "total": 6500,
+    "slabBase": "matrix",
+    "slabCtc": 400000
+   },
+   "guard": "This month is finalised. Reopen it first.",
+   "alerts": [],
+   "confirms": [
+    "Reopen P1 for 2026-10?\n\nThe figures it was finalised on are kept in the audit trail, but the form will be worked out fresh from here."
+   ]
+  },
+  {
+   "label": "reopened",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ],
+    "slabBase": "individual"
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "sales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-1",
+    "userId": "P1",
+    "month": "2026-10",
+    "kind": "sales",
+    "annualCtc": 420000,
+    "branch": "Pune",
+    "designation": "Relationship Executive",
+    "netSalesRows": [
+     {
+      "cat": "Mutual Fund",
+      "sub": "Equity",
+      "source": "Self",
+      "meeting": "Independent meeting",
+      "amount": 2400000
+     },
+     {
+      "cat": "Gold",
+      "sub": "",
+      "source": "",
+      "meeting": "",
+      "amount": 0
+     }
+    ],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [
+     {
+      "label": "All",
+      "n": 30
+     }
+    ],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Draft",
+    "snapshot": {
+     "basis": {
+      "ctc": 420000,
+      "monthly": 35000,
+      "slabCtc": 400000,
+      "slabMonthly": 33333.333333333336
+     },
+     "sections": {
+      "investment": [
+       {
+        "row": {
+         "cat": "Mutual Fund",
+         "sub": "Equity",
+         "source": "Self",
+         "meeting": "Independent meeting",
+         "amount": 2400000
+        },
+        "amount": 2400000,
+        "pcw": 1,
+        "lsw": 1.25,
+        "mw": 1,
+        "mult": 1.25,
+        "credit": 3000000,
+        "ok": true,
+        "problems": []
+       },
+       {
+        "row": {
+         "cat": "Gold",
+         "sub": "",
+         "source": "",
+         "meeting": "",
+         "amount": 0
+        },
+        "amount": 0,
+        "pcw": null,
+        "lsw": null,
+        "mw": null,
+        "mult": null,
+        "credit": null,
+        "ok": false,
+        "problems": [
+         "“Gold /” is not on the product credit list",
+         "“” is not a lead source on the list",
+         "“” is not a meeting type on the list"
+        ]
+       }
+      ],
+      "sip": [],
+      "insurance": []
+     },
+     "totals": {
+      "investment": {
+       "amount": 2400000,
+       "credit": 3000000,
+       "lines": 2,
+       "dropped": 1
+      },
+      "sip": {
+       "amount": 0,
+       "credit": 0,
+       "lines": 0,
+       "dropped": 0
+      },
+      "insurance": {
+       "amount": 0,
+       "credit": 0,
+       "lines": 0,
+       "dropped": 0
+      }
+     },
+     "premiumTotal": 0,
+     "credits": {
+      "netSales": 3000000,
+      "freshSip": 0,
+      "meetings": 30,
+      "newClients": 0,
+      "callLogs": 0,
+      "lifeInsurance": 0,
+      "healthInsurance": 0
+     },
+     "streams": [
+      {
+       "key": "netSales",
+       "label": "Net Sales",
+       "kind": "money",
+       "payout": "pctOfCredit",
+       "rateNote": "% of Net Credit",
+       "baseline": 2100000,
+       "baselineNote": "5 Times CTC",
+       "credit": 3000000,
+       "qualified": true,
+       "belowLowest": false,
+       "slab": "Gold Slab",
+       "rate": 0.002,
+       "excess": 900000,
+       "incentive": 6000,
+       "floor": 2000000
+      },
+      {
+       "key": "freshSip",
+       "label": "Fresh SIP",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess SIP",
+       "baseline": 70000,
+       "baselineNote": "2 Times Monthly Salary",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -70000,
+       "incentive": 0,
+       "floor": 66666.66666666667
+      },
+      {
+       "key": "meetings",
+       "label": "Meetings",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess meeting",
+       "baseline": 25,
+       "baselineNote": "Daily One Meeting",
+       "credit": 30,
+       "qualified": true,
+       "belowLowest": false,
+       "slab": "Silver Slab",
+       "rate": 100,
+       "excess": 5,
+       "incentive": 500,
+       "floor": 25
+      },
+      {
+       "key": "newClients",
+       "label": "New Clients",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess client",
+       "baseline": 5,
+       "baselineNote": "Monthly Target",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -5,
+       "incentive": 0,
+       "floor": 6
+      },
+      {
+       "key": "callLogs",
+       "label": "Call Logs",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess call",
+       "baseline": 250,
+       "baselineNote": "10 Calls a Day",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -250,
+       "incentive": 0,
+       "floor": 251
+      },
+      {
+       "key": "lifeInsurance",
+       "label": "Life insurance",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess premium",
+       "baseline": 10000,
+       "baselineNote": "Fresh LIP",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -10000,
+       "incentive": 0,
+       "floor": 10000
+      },
+      {
+       "key": "healthInsurance",
+       "label": "Health insurance",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess premium",
+       "baseline": 10000,
+       "baselineNote": "Fresh GIP/HIP",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -10000,
+       "incentive": 0,
+       "floor": 10000
+      }
+     ],
+     "problems": [
+      {
+       "section": "investment",
+       "line": 2,
+       "why": [
+        "“Gold /” is not on the product credit list",
+        "“” is not a lead source on the list",
+        "“” is not a meeting type on the list"
+       ]
+      }
+     ],
+     "total": 6500,
+     "slabBase": "matrix",
+     "slabCtc": 400000
+    },
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.698Z",
+    "createdBy": "HR1",
+    "updatedAt": "2026-11-21T11:35:12.702Z",
+    "finalisedAt": "2026-11-21T11:35:12.703Z",
+    "finalisedBy": "HR1",
+    "finalTotal": 6500,
+    "reopenedAt": "2026-11-21T11:35:12.704Z",
+    "reopenedBy": "HR1"
+   },
+   "kind": "sales",
+   "result": {
+    "basis": {
+     "ctc": 420000,
+     "monthly": 35000,
+     "slabCtc": 420000,
+     "slabMonthly": 35000
+    },
+    "sections": {
+     "investment": [
+      {
+       "row": {
+        "cat": "Mutual Fund",
+        "sub": "Equity",
+        "source": "Self",
+        "meeting": "Independent meeting",
+        "amount": 2400000
+       },
+       "amount": 2400000,
+       "pcw": 1,
+       "lsw": 1.25,
+       "mw": 1,
+       "mult": 1.25,
+       "credit": 3000000,
+       "ok": true,
+       "problems": []
+      },
+      {
+       "row": {
+        "cat": "Gold",
+        "sub": "",
+        "source": "",
+        "meeting": "",
+        "amount": 0
+       },
+       "amount": 0,
+       "pcw": null,
+       "lsw": null,
+       "mw": null,
+       "mult": null,
+       "credit": null,
+       "ok": false,
+       "problems": [
+        "“Gold /” is not on the product credit list",
+        "“” is not a lead source on the list",
+        "“” is not a meeting type on the list"
+       ]
+      }
+     ],
+     "sip": [],
+     "insurance": []
+    },
+    "totals": {
+     "investment": {
+      "amount": 2400000,
+      "credit": 3000000,
+      "lines": 2,
+      "dropped": 1
+     },
+     "sip": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     },
+     "insurance": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     }
+    },
+    "premiumTotal": 0,
+    "credits": {
+     "netSales": 3000000,
+     "freshSip": 0,
+     "meetings": 30,
+     "newClients": 0,
+     "callLogs": 0,
+     "lifeInsurance": 0,
+     "healthInsurance": 0
+    },
+    "streams": [
+     {
+      "key": "netSales",
+      "label": "Net Sales",
+      "kind": "money",
+      "payout": "pctOfCredit",
+      "rateNote": "% of Net Credit",
+      "baseline": 2100000,
+      "baselineNote": "5 Times CTC",
+      "credit": 3000000,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Gold Slab",
+      "rate": 0.002,
+      "excess": 900000,
+      "incentive": 6000,
+      "floor": 2100000
+     },
+     {
+      "key": "freshSip",
+      "label": "Fresh SIP",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess SIP",
+      "baseline": 70000,
+      "baselineNote": "2 Times Monthly Salary",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -70000,
+      "incentive": 0,
+      "floor": 70000
+     },
+     {
+      "key": "meetings",
+      "label": "Meetings",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess meeting",
+      "baseline": 25,
+      "baselineNote": "Daily One Meeting",
+      "credit": 30,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Silver Slab",
+      "rate": 100,
+      "excess": 5,
+      "incentive": 500,
+      "floor": 25
+     },
+     {
+      "key": "newClients",
+      "label": "New Clients",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess client",
+      "baseline": 5,
+      "baselineNote": "Monthly Target",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -5,
+      "incentive": 0,
+      "floor": 6
+     },
+     {
+      "key": "callLogs",
+      "label": "Call Logs",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess call",
+      "baseline": 250,
+      "baselineNote": "10 Calls a Day",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -250,
+      "incentive": 0,
+      "floor": 251
+     },
+     {
+      "key": "lifeInsurance",
+      "label": "Life insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh LIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     },
+     {
+      "key": "healthInsurance",
+      "label": "Health insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh GIP/HIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     }
+    ],
+    "problems": [
+     {
+      "section": "investment",
+      "line": 2,
+      "why": [
+       "“Gold /” is not on the product credit list",
+       "“” is not a lead source on the list",
+       "“” is not a meeting type on the list"
+      ]
+     }
+    ],
+    "total": 6500,
+    "slabBase": "individual",
+    "slabCtc": 420000
+   },
+   "guard": "",
+   "alerts": [],
+   "confirms": [
+    "Reopen P1 for 2026-10?\n\nThe figures it was finalised on are kept in the audit trail, but the form will be worked out fresh from here."
+   ]
+  },
+  {
+   "label": "dropped problem line",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ],
+    "slabBase": "individual"
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "sales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-1",
+    "userId": "P1",
+    "month": "2026-10",
+    "kind": "sales",
+    "annualCtc": 420000,
+    "branch": "Pune",
+    "designation": "Relationship Executive",
+    "netSalesRows": [
+     {
+      "cat": "Mutual Fund",
+      "sub": "Equity",
+      "source": "Self",
+      "meeting": "Independent meeting",
+      "amount": 2400000
+     }
+    ],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [
+     {
+      "label": "All",
+      "n": 30
+     }
+    ],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Draft",
+    "snapshot": {
+     "basis": {
+      "ctc": 420000,
+      "monthly": 35000,
+      "slabCtc": 400000,
+      "slabMonthly": 33333.333333333336
+     },
+     "sections": {
+      "investment": [
+       {
+        "row": {
+         "cat": "Mutual Fund",
+         "sub": "Equity",
+         "source": "Self",
+         "meeting": "Independent meeting",
+         "amount": 2400000
+        },
+        "amount": 2400000,
+        "pcw": 1,
+        "lsw": 1.25,
+        "mw": 1,
+        "mult": 1.25,
+        "credit": 3000000,
+        "ok": true,
+        "problems": []
+       },
+       {
+        "row": {
+         "cat": "Gold",
+         "sub": "",
+         "source": "",
+         "meeting": "",
+         "amount": 0
+        },
+        "amount": 0,
+        "pcw": null,
+        "lsw": null,
+        "mw": null,
+        "mult": null,
+        "credit": null,
+        "ok": false,
+        "problems": [
+         "“Gold /” is not on the product credit list",
+         "“” is not a lead source on the list",
+         "“” is not a meeting type on the list"
+        ]
+       }
+      ],
+      "sip": [],
+      "insurance": []
+     },
+     "totals": {
+      "investment": {
+       "amount": 2400000,
+       "credit": 3000000,
+       "lines": 2,
+       "dropped": 1
+      },
+      "sip": {
+       "amount": 0,
+       "credit": 0,
+       "lines": 0,
+       "dropped": 0
+      },
+      "insurance": {
+       "amount": 0,
+       "credit": 0,
+       "lines": 0,
+       "dropped": 0
+      }
+     },
+     "premiumTotal": 0,
+     "credits": {
+      "netSales": 3000000,
+      "freshSip": 0,
+      "meetings": 30,
+      "newClients": 0,
+      "callLogs": 0,
+      "lifeInsurance": 0,
+      "healthInsurance": 0
+     },
+     "streams": [
+      {
+       "key": "netSales",
+       "label": "Net Sales",
+       "kind": "money",
+       "payout": "pctOfCredit",
+       "rateNote": "% of Net Credit",
+       "baseline": 2100000,
+       "baselineNote": "5 Times CTC",
+       "credit": 3000000,
+       "qualified": true,
+       "belowLowest": false,
+       "slab": "Gold Slab",
+       "rate": 0.002,
+       "excess": 900000,
+       "incentive": 6000,
+       "floor": 2000000
+      },
+      {
+       "key": "freshSip",
+       "label": "Fresh SIP",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess SIP",
+       "baseline": 70000,
+       "baselineNote": "2 Times Monthly Salary",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -70000,
+       "incentive": 0,
+       "floor": 66666.66666666667
+      },
+      {
+       "key": "meetings",
+       "label": "Meetings",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess meeting",
+       "baseline": 25,
+       "baselineNote": "Daily One Meeting",
+       "credit": 30,
+       "qualified": true,
+       "belowLowest": false,
+       "slab": "Silver Slab",
+       "rate": 100,
+       "excess": 5,
+       "incentive": 500,
+       "floor": 25
+      },
+      {
+       "key": "newClients",
+       "label": "New Clients",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess client",
+       "baseline": 5,
+       "baselineNote": "Monthly Target",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -5,
+       "incentive": 0,
+       "floor": 6
+      },
+      {
+       "key": "callLogs",
+       "label": "Call Logs",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess call",
+       "baseline": 250,
+       "baselineNote": "10 Calls a Day",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -250,
+       "incentive": 0,
+       "floor": 251
+      },
+      {
+       "key": "lifeInsurance",
+       "label": "Life insurance",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess premium",
+       "baseline": 10000,
+       "baselineNote": "Fresh LIP",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -10000,
+       "incentive": 0,
+       "floor": 10000
+      },
+      {
+       "key": "healthInsurance",
+       "label": "Health insurance",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess premium",
+       "baseline": 10000,
+       "baselineNote": "Fresh GIP/HIP",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -10000,
+       "incentive": 0,
+       "floor": 10000
+      }
+     ],
+     "problems": [
+      {
+       "section": "investment",
+       "line": 2,
+       "why": [
+        "“Gold /” is not on the product credit list",
+        "“” is not a lead source on the list",
+        "“” is not a meeting type on the list"
+       ]
+      }
+     ],
+     "total": 6500,
+     "slabBase": "matrix",
+     "slabCtc": 400000
+    },
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.698Z",
+    "createdBy": "HR1",
+    "updatedAt": "2026-11-21T11:35:12.705Z",
+    "finalisedAt": "2026-11-21T11:35:12.703Z",
+    "finalisedBy": "HR1",
+    "finalTotal": 6500,
+    "reopenedAt": "2026-11-21T11:35:12.704Z",
+    "reopenedBy": "HR1"
+   },
+   "kind": "sales",
+   "result": {
+    "basis": {
+     "ctc": 420000,
+     "monthly": 35000,
+     "slabCtc": 420000,
+     "slabMonthly": 35000
+    },
+    "sections": {
+     "investment": [
+      {
+       "row": {
+        "cat": "Mutual Fund",
+        "sub": "Equity",
+        "source": "Self",
+        "meeting": "Independent meeting",
+        "amount": 2400000
+       },
+       "amount": 2400000,
+       "pcw": 1,
+       "lsw": 1.25,
+       "mw": 1,
+       "mult": 1.25,
+       "credit": 3000000,
+       "ok": true,
+       "problems": []
+      }
+     ],
+     "sip": [],
+     "insurance": []
+    },
+    "totals": {
+     "investment": {
+      "amount": 2400000,
+      "credit": 3000000,
+      "lines": 1,
+      "dropped": 0
+     },
+     "sip": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     },
+     "insurance": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     }
+    },
+    "premiumTotal": 0,
+    "credits": {
+     "netSales": 3000000,
+     "freshSip": 0,
+     "meetings": 30,
+     "newClients": 0,
+     "callLogs": 0,
+     "lifeInsurance": 0,
+     "healthInsurance": 0
+    },
+    "streams": [
+     {
+      "key": "netSales",
+      "label": "Net Sales",
+      "kind": "money",
+      "payout": "pctOfCredit",
+      "rateNote": "% of Net Credit",
+      "baseline": 2100000,
+      "baselineNote": "5 Times CTC",
+      "credit": 3000000,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Gold Slab",
+      "rate": 0.002,
+      "excess": 900000,
+      "incentive": 6000,
+      "floor": 2100000
+     },
+     {
+      "key": "freshSip",
+      "label": "Fresh SIP",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess SIP",
+      "baseline": 70000,
+      "baselineNote": "2 Times Monthly Salary",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -70000,
+      "incentive": 0,
+      "floor": 70000
+     },
+     {
+      "key": "meetings",
+      "label": "Meetings",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess meeting",
+      "baseline": 25,
+      "baselineNote": "Daily One Meeting",
+      "credit": 30,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Silver Slab",
+      "rate": 100,
+      "excess": 5,
+      "incentive": 500,
+      "floor": 25
+     },
+     {
+      "key": "newClients",
+      "label": "New Clients",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess client",
+      "baseline": 5,
+      "baselineNote": "Monthly Target",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -5,
+      "incentive": 0,
+      "floor": 6
+     },
+     {
+      "key": "callLogs",
+      "label": "Call Logs",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess call",
+      "baseline": 250,
+      "baselineNote": "10 Calls a Day",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -250,
+      "incentive": 0,
+      "floor": 251
+     },
+     {
+      "key": "lifeInsurance",
+      "label": "Life insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh LIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     },
+     {
+      "key": "healthInsurance",
+      "label": "Health insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh GIP/HIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     }
+    ],
+    "problems": [],
+    "total": 6500,
+    "slabBase": "individual",
+    "slabCtc": 420000
+   },
+   "guard": "",
+   "alerts": [],
+   "confirms": []
+  },
+  {
+   "label": "finalised clean",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ],
+    "slabBase": "individual"
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "sales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-1",
+    "userId": "P1",
+    "month": "2026-10",
+    "kind": "sales",
+    "annualCtc": 420000,
+    "branch": "Pune",
+    "designation": "Relationship Executive",
+    "netSalesRows": [
+     {
+      "cat": "Mutual Fund",
+      "sub": "Equity",
+      "source": "Self",
+      "meeting": "Independent meeting",
+      "amount": 2400000
+     }
+    ],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [
+     {
+      "label": "All",
+      "n": 30
+     }
+    ],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Finalised",
+    "snapshot": {
+     "basis": {
+      "ctc": 420000,
+      "monthly": 35000,
+      "slabCtc": 420000,
+      "slabMonthly": 35000
+     },
+     "sections": {
+      "investment": [
+       {
+        "row": {
+         "cat": "Mutual Fund",
+         "sub": "Equity",
+         "source": "Self",
+         "meeting": "Independent meeting",
+         "amount": 2400000
+        },
+        "amount": 2400000,
+        "pcw": 1,
+        "lsw": 1.25,
+        "mw": 1,
+        "mult": 1.25,
+        "credit": 3000000,
+        "ok": true,
+        "problems": []
+       }
+      ],
+      "sip": [],
+      "insurance": []
+     },
+     "totals": {
+      "investment": {
+       "amount": 2400000,
+       "credit": 3000000,
+       "lines": 1,
+       "dropped": 0
+      },
+      "sip": {
+       "amount": 0,
+       "credit": 0,
+       "lines": 0,
+       "dropped": 0
+      },
+      "insurance": {
+       "amount": 0,
+       "credit": 0,
+       "lines": 0,
+       "dropped": 0
+      }
+     },
+     "premiumTotal": 0,
+     "credits": {
+      "netSales": 3000000,
+      "freshSip": 0,
+      "meetings": 30,
+      "newClients": 0,
+      "callLogs": 0,
+      "lifeInsurance": 0,
+      "healthInsurance": 0
+     },
+     "streams": [
+      {
+       "key": "netSales",
+       "label": "Net Sales",
+       "kind": "money",
+       "payout": "pctOfCredit",
+       "rateNote": "% of Net Credit",
+       "baseline": 2100000,
+       "baselineNote": "5 Times CTC",
+       "credit": 3000000,
+       "qualified": true,
+       "belowLowest": false,
+       "slab": "Gold Slab",
+       "rate": 0.002,
+       "excess": 900000,
+       "incentive": 6000,
+       "floor": 2100000
+      },
+      {
+       "key": "freshSip",
+       "label": "Fresh SIP",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess SIP",
+       "baseline": 70000,
+       "baselineNote": "2 Times Monthly Salary",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -70000,
+       "incentive": 0,
+       "floor": 70000
+      },
+      {
+       "key": "meetings",
+       "label": "Meetings",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess meeting",
+       "baseline": 25,
+       "baselineNote": "Daily One Meeting",
+       "credit": 30,
+       "qualified": true,
+       "belowLowest": false,
+       "slab": "Silver Slab",
+       "rate": 100,
+       "excess": 5,
+       "incentive": 500,
+       "floor": 25
+      },
+      {
+       "key": "newClients",
+       "label": "New Clients",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess client",
+       "baseline": 5,
+       "baselineNote": "Monthly Target",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -5,
+       "incentive": 0,
+       "floor": 6
+      },
+      {
+       "key": "callLogs",
+       "label": "Call Logs",
+       "kind": "count",
+       "payout": "perExcessUnit",
+       "rateNote": "Per excess call",
+       "baseline": 250,
+       "baselineNote": "10 Calls a Day",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -250,
+       "incentive": 0,
+       "floor": 251
+      },
+      {
+       "key": "lifeInsurance",
+       "label": "Life insurance",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess premium",
+       "baseline": 10000,
+       "baselineNote": "Fresh LIP",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -10000,
+       "incentive": 0,
+       "floor": 10000
+      },
+      {
+       "key": "healthInsurance",
+       "label": "Health insurance",
+       "kind": "money",
+       "payout": "perThousandExcess",
+       "rateNote": "Per Rs 1000 excess premium",
+       "baseline": 10000,
+       "baselineNote": "Fresh GIP/HIP",
+       "credit": 0,
+       "qualified": false,
+       "belowLowest": false,
+       "slab": "Not Qualified",
+       "rate": 0,
+       "excess": -10000,
+       "incentive": 0,
+       "floor": 10000
+      }
+     ],
+     "problems": [],
+     "total": 6500,
+     "slabBase": "individual",
+     "slabCtc": 420000
+    },
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.698Z",
+    "createdBy": "HR1",
+    "updatedAt": "2026-11-21T11:35:12.705Z",
+    "finalisedAt": "2026-11-21T11:35:12.705Z",
+    "finalisedBy": "HR1",
+    "finalTotal": 6500,
+    "reopenedAt": "2026-11-21T11:35:12.704Z",
+    "reopenedBy": "HR1"
+   },
+   "kind": "sales",
+   "result": {
+    "basis": {
+     "ctc": 420000,
+     "monthly": 35000,
+     "slabCtc": 420000,
+     "slabMonthly": 35000
+    },
+    "sections": {
+     "investment": [
+      {
+       "row": {
+        "cat": "Mutual Fund",
+        "sub": "Equity",
+        "source": "Self",
+        "meeting": "Independent meeting",
+        "amount": 2400000
+       },
+       "amount": 2400000,
+       "pcw": 1,
+       "lsw": 1.25,
+       "mw": 1,
+       "mult": 1.25,
+       "credit": 3000000,
+       "ok": true,
+       "problems": []
+      }
+     ],
+     "sip": [],
+     "insurance": []
+    },
+    "totals": {
+     "investment": {
+      "amount": 2400000,
+      "credit": 3000000,
+      "lines": 1,
+      "dropped": 0
+     },
+     "sip": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     },
+     "insurance": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     }
+    },
+    "premiumTotal": 0,
+    "credits": {
+     "netSales": 3000000,
+     "freshSip": 0,
+     "meetings": 30,
+     "newClients": 0,
+     "callLogs": 0,
+     "lifeInsurance": 0,
+     "healthInsurance": 0
+    },
+    "streams": [
+     {
+      "key": "netSales",
+      "label": "Net Sales",
+      "kind": "money",
+      "payout": "pctOfCredit",
+      "rateNote": "% of Net Credit",
+      "baseline": 2100000,
+      "baselineNote": "5 Times CTC",
+      "credit": 3000000,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Gold Slab",
+      "rate": 0.002,
+      "excess": 900000,
+      "incentive": 6000,
+      "floor": 2100000
+     },
+     {
+      "key": "freshSip",
+      "label": "Fresh SIP",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess SIP",
+      "baseline": 70000,
+      "baselineNote": "2 Times Monthly Salary",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -70000,
+      "incentive": 0,
+      "floor": 70000
+     },
+     {
+      "key": "meetings",
+      "label": "Meetings",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess meeting",
+      "baseline": 25,
+      "baselineNote": "Daily One Meeting",
+      "credit": 30,
+      "qualified": true,
+      "belowLowest": false,
+      "slab": "Silver Slab",
+      "rate": 100,
+      "excess": 5,
+      "incentive": 500,
+      "floor": 25
+     },
+     {
+      "key": "newClients",
+      "label": "New Clients",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess client",
+      "baseline": 5,
+      "baselineNote": "Monthly Target",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -5,
+      "incentive": 0,
+      "floor": 6
+     },
+     {
+      "key": "callLogs",
+      "label": "Call Logs",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess call",
+      "baseline": 250,
+      "baselineNote": "10 Calls a Day",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -250,
+      "incentive": 0,
+      "floor": 251
+     },
+     {
+      "key": "lifeInsurance",
+      "label": "Life insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh LIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     },
+     {
+      "key": "healthInsurance",
+      "label": "Health insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh GIP/HIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     }
+    ],
+    "problems": [],
+    "total": 6500,
+    "slabBase": "individual",
+    "slabCtc": 420000
+   },
+   "guard": "This month is finalised. Reopen it first.",
+   "alerts": [],
+   "confirms": []
+  },
+  {
+   "label": "non-sales draft, no point value",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ],
+    "slabBase": "individual"
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-2",
+    "userId": "P5",
+    "month": "2026-10",
+    "kind": "sales",
+    "annualCtc": 0,
+    "branch": "",
+    "designation": "Accountant",
+    "netSalesRows": [],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Draft",
+    "snapshot": null,
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.705Z",
+    "createdBy": "HR1",
+    "taskCounts": [
+     {
+      "taskId": "T1",
+      "n": 7
+     },
+     {
+      "taskId": "T2",
+      "n": "4"
+     },
+     {
+      "taskId": "T3",
+      "n": 9
+     },
+     {
+      "taskId": "T1",
+      "n": 1
+     }
+    ]
+   },
+   "kind": "nonSales",
+   "result": {
+    "taskPoints": {
+     "rows": [
+      {
+       "task": {
+        "id": "T1",
+        "name": "KYC",
+        "points": 2,
+        "cap": 5,
+        "roles": [],
+        "departments": [],
+        "active": true
+       },
+       "found": 8,
+       "already": 0,
+       "counted": 5,
+       "capped": true,
+       "points": 10,
+       "ids": []
+      },
+      {
+       "task": {
+        "id": "T2",
+        "name": "Audit",
+        "points": "3",
+        "cap": 0,
+        "roles": [
+         "Accountant"
+        ],
+        "departments": []
+       },
+       "found": 4,
+       "already": 0,
+       "counted": 4,
+       "capped": false,
+       "points": 12,
+       "ids": []
+      }
+     ],
+     "points": 22,
+     "rate": null,
+     "payable": null,
+     "ids": []
+    },
+    "total": 0,
+    "payable": null,
+    "streams": [],
+    "problems": []
+   },
+   "guard": "",
+   "alerts": [],
+   "confirms": []
+  },
+  {
+   "label": "non-sales finalise refused",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ],
+    "slabBase": "individual"
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-2",
+    "userId": "P5",
+    "month": "2026-10",
+    "kind": "nonSales",
+    "annualCtc": 0,
+    "branch": "",
+    "designation": "Accountant",
+    "netSalesRows": [],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Draft",
+    "snapshot": null,
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.705Z",
+    "createdBy": "HR1",
+    "taskCounts": [
+     {
+      "taskId": "T1",
+      "n": 7
+     },
+     {
+      "taskId": "T2",
+      "n": "4"
+     },
+     {
+      "taskId": "T3",
+      "n": 9
+     },
+     {
+      "taskId": "T1",
+      "n": 1
+     }
+    ]
+   },
+   "kind": "nonSales",
+   "result": {
+    "taskPoints": {
+     "rows": [
+      {
+       "task": {
+        "id": "T1",
+        "name": "KYC",
+        "points": 2,
+        "cap": 5,
+        "roles": [],
+        "departments": [],
+        "active": true
+       },
+       "found": 8,
+       "already": 0,
+       "counted": 5,
+       "capped": true,
+       "points": 10,
+       "ids": []
+      },
+      {
+       "task": {
+        "id": "T2",
+        "name": "Audit",
+        "points": "3",
+        "cap": 0,
+        "roles": [
+         "Accountant"
+        ],
+        "departments": []
+       },
+       "found": 4,
+       "already": 0,
+       "counted": 4,
+       "capped": false,
+       "points": 12,
+       "ids": []
+      }
+     ],
+     "points": 22,
+     "rate": null,
+     "payable": null,
+     "ids": []
+    },
+    "total": 0,
+    "payable": null,
+    "streams": [],
+    "problems": []
+   },
+   "guard": "",
+   "alerts": [
+    "A point is not worth anything yet.\n\nNobody has set the point-to-rupee conversion, and the workbook does not supply one. Set it in Setup › Incentive Grid before finalising a non-sales month."
+   ],
+   "confirms": []
+  },
+  {
+   "label": "non-sales with point value",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ],
+    "slabBase": "individual",
+    "pointValue": 25
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-2",
+    "userId": "P5",
+    "month": "2026-10",
+    "kind": "nonSales",
+    "annualCtc": 0,
+    "branch": "",
+    "designation": "Accountant",
+    "netSalesRows": [],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Draft",
+    "snapshot": null,
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.705Z",
+    "createdBy": "HR1",
+    "taskCounts": [
+     {
+      "taskId": "T1",
+      "n": 7
+     },
+     {
+      "taskId": "T2",
+      "n": "4"
+     },
+     {
+      "taskId": "T3",
+      "n": 9
+     },
+     {
+      "taskId": "T1",
+      "n": 1
+     }
+    ]
+   },
+   "kind": "nonSales",
+   "result": {
+    "taskPoints": {
+     "rows": [
+      {
+       "task": {
+        "id": "T1",
+        "name": "KYC",
+        "points": 2,
+        "cap": 5,
+        "roles": [],
+        "departments": [],
+        "active": true
+       },
+       "found": 8,
+       "already": 0,
+       "counted": 5,
+       "capped": true,
+       "points": 10,
+       "ids": []
+      },
+      {
+       "task": {
+        "id": "T2",
+        "name": "Audit",
+        "points": "3",
+        "cap": 0,
+        "roles": [
+         "Accountant"
+        ],
+        "departments": []
+       },
+       "found": 4,
+       "already": 0,
+       "counted": 4,
+       "capped": false,
+       "points": 12,
+       "ids": []
+      }
+     ],
+     "points": 22,
+     "rate": 25,
+     "payable": 550,
+     "ids": []
+    },
+    "total": 550,
+    "payable": 550,
+    "streams": [],
+    "problems": []
+   },
+   "guard": "",
+   "alerts": [],
+   "confirms": []
+  },
+  {
+   "label": "non-sales finalised",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ],
+    "slabBase": "individual",
+    "pointValue": 25
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-2",
+    "userId": "P5",
+    "month": "2026-10",
+    "kind": "nonSales",
+    "annualCtc": 0,
+    "branch": "",
+    "designation": "Accountant",
+    "netSalesRows": [],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Finalised",
+    "snapshot": {
+     "taskPoints": {
+      "rows": [
+       {
+        "task": {
+         "id": "T1",
+         "name": "KYC",
+         "points": 2,
+         "cap": 5,
+         "roles": [],
+         "departments": [],
+         "active": true
+        },
+        "found": 8,
+        "already": 0,
+        "counted": 5,
+        "capped": true,
+        "points": 10,
+        "ids": []
+       },
+       {
+        "task": {
+         "id": "T2",
+         "name": "Audit",
+         "points": "3",
+         "cap": 0,
+         "roles": [
+          "Accountant"
+         ],
+         "departments": []
+        },
+        "found": 4,
+        "already": 0,
+        "counted": 4,
+        "capped": false,
+        "points": 12,
+        "ids": []
+       }
+      ],
+      "points": 22,
+      "rate": 25,
+      "payable": 550,
+      "ids": []
+     },
+     "total": 550,
+     "streams": [],
+     "problems": []
+    },
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.705Z",
+    "createdBy": "HR1",
+    "taskCounts": [
+     {
+      "taskId": "T1",
+      "n": 7
+     },
+     {
+      "taskId": "T2",
+      "n": "4"
+     },
+     {
+      "taskId": "T3",
+      "n": 9
+     },
+     {
+      "taskId": "T1",
+      "n": 1
+     }
+    ],
+    "finalisedAt": "2026-11-21T11:35:12.706Z",
+    "finalisedBy": "HR1",
+    "finalTotal": 550
+   },
+   "kind": "nonSales",
+   "result": {
+    "taskPoints": {
+     "rows": [
+      {
+       "task": {
+        "id": "T1",
+        "name": "KYC",
+        "points": 2,
+        "cap": 5,
+        "roles": [],
+        "departments": [],
+        "active": true
+       },
+       "found": 8,
+       "already": 0,
+       "counted": 5,
+       "capped": true,
+       "points": 10,
+       "ids": []
+      },
+      {
+       "task": {
+        "id": "T2",
+        "name": "Audit",
+        "points": "3",
+        "cap": 0,
+        "roles": [
+         "Accountant"
+        ],
+        "departments": []
+       },
+       "found": 4,
+       "already": 0,
+       "counted": 4,
+       "capped": false,
+       "points": 12,
+       "ids": []
+      }
+     ],
+     "points": 22,
+     "rate": 25,
+     "payable": 550,
+     "ids": []
+    },
+    "total": 550,
+    "streams": [],
+    "problems": []
+   },
+   "guard": "This month is finalised. Reopen it first.",
+   "alerts": [],
+   "confirms": []
+  },
+  {
+   "label": "override nonSales draft",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ],
+    "slabBase": "individual",
+    "pointValue": 25
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-3",
+    "userId": "P4",
+    "month": "2026-11",
+    "kind": "nonSales",
+    "annualCtc": 300000,
+    "branch": "",
+    "designation": "Relationship Executive",
+    "netSalesRows": [],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Draft",
+    "snapshot": null,
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.706Z",
+    "createdBy": "HR1"
+   },
+   "kind": "nonSales",
+   "result": {
+    "taskPoints": {
+     "rows": [
+      {
+       "task": {
+        "id": "T1",
+        "name": "KYC",
+        "points": 2,
+        "cap": 5,
+        "roles": [],
+        "departments": [],
+        "active": true
+       },
+       "found": 0,
+       "already": 0,
+       "counted": 0,
+       "capped": false,
+       "points": 0,
+       "ids": []
+      }
+     ],
+     "points": 0,
+     "rate": 25,
+     "payable": 0,
+     "ids": []
+    },
+    "total": 0,
+    "payable": 0,
+    "streams": [],
+    "problems": []
+   },
+   "guard": "",
+   "alerts": [],
+   "confirms": []
+  },
+  {
+   "label": "same draft after moving to sales",
+   "saved": {
+    "salesRoles": [
+     "Relationship Executive"
+    ],
+    "tasks": [
+     {
+      "id": "T1",
+      "name": "KYC",
+      "points": 2,
+      "cap": 5,
+      "roles": [],
+      "departments": [],
+      "active": true
+     },
+     {
+      "id": "T2",
+      "name": "Audit",
+      "points": "3",
+      "cap": 0,
+      "roles": [
+       "Accountant"
+      ],
+      "departments": []
+     },
+     {
+      "id": "T3",
+      "name": "Off",
+      "points": 10,
+      "active": false
+     }
+    ],
+    "slabBase": "individual",
+    "pointValue": 25
+   },
+   "team": [
+    {
+     "id": "P1",
+     "name": "Asha",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 360000
+    },
+    {
+     "id": "P2",
+     "name": "Ravi",
+     "role": "  relationship   executive ",
+     "department": "Ops",
+     "ctc": 480000
+    },
+    {
+     "id": "P3",
+     "name": "Mina",
+     "role": "Analyst",
+     "department": " sales desk",
+     "ctc": 500000
+    },
+    {
+     "id": "P4",
+     "name": "Om",
+     "role": "Relationship Executive",
+     "department": "Wealth",
+     "ctc": 300000,
+     "incentiveCategory": "sales"
+    },
+    {
+     "id": "P5",
+     "name": "Lata",
+     "role": "Accountant",
+     "department": "Finance",
+     "ctc": 0,
+     "incentiveCategory": "nonSales"
+    },
+    {
+     "id": "P6",
+     "name": "Noor",
+     "role": "",
+     "department": "",
+     "ctc": 240000,
+     "incentiveCategory": "bogus"
+    },
+    {
+     "id": "P7",
+     "name": "Zed"
+    }
+   ],
+   "sheet": {
+    "id": "INC-3",
+    "userId": "P4",
+    "month": "2026-11",
+    "kind": "nonSales",
+    "annualCtc": 300000,
+    "branch": "",
+    "designation": "Relationship Executive",
+    "netSalesRows": [],
+    "sipRows": [],
+    "insuranceRows": [],
+    "meetingRows": [],
+    "clientRows": [],
+    "callRows": [],
+    "status": "Draft",
+    "snapshot": null,
+    "ledger": [],
+    "createdAt": "2026-11-21T11:35:12.706Z",
+    "createdBy": "HR1"
+   },
+   "kind": "sales",
+   "result": {
+    "basis": {
+     "ctc": 300000,
+     "monthly": 25000,
+     "slabCtc": 300000,
+     "slabMonthly": 25000
+    },
+    "sections": {
+     "investment": [],
+     "sip": [],
+     "insurance": []
+    },
+    "totals": {
+     "investment": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     },
+     "sip": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     },
+     "insurance": {
+      "amount": 0,
+      "credit": 0,
+      "lines": 0,
+      "dropped": 0
+     }
+    },
+    "premiumTotal": 0,
+    "credits": {
+     "netSales": 0,
+     "freshSip": 0,
+     "meetings": 0,
+     "newClients": 0,
+     "callLogs": 0,
+     "lifeInsurance": 0,
+     "healthInsurance": 0
+    },
+    "streams": [
+     {
+      "key": "netSales",
+      "label": "Net Sales",
+      "kind": "money",
+      "payout": "pctOfCredit",
+      "rateNote": "% of Net Credit",
+      "baseline": 1500000,
+      "baselineNote": "5 Times CTC",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -1500000,
+      "incentive": 0,
+      "floor": 1500000
+     },
+     {
+      "key": "freshSip",
+      "label": "Fresh SIP",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess SIP",
+      "baseline": 50000,
+      "baselineNote": "2 Times Monthly Salary",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -50000,
+      "incentive": 0,
+      "floor": 50000
+     },
+     {
+      "key": "meetings",
+      "label": "Meetings",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess meeting",
+      "baseline": 25,
+      "baselineNote": "Daily One Meeting",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -25,
+      "incentive": 0,
+      "floor": 25
+     },
+     {
+      "key": "newClients",
+      "label": "New Clients",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess client",
+      "baseline": 5,
+      "baselineNote": "Monthly Target",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -5,
+      "incentive": 0,
+      "floor": 6
+     },
+     {
+      "key": "callLogs",
+      "label": "Call Logs",
+      "kind": "count",
+      "payout": "perExcessUnit",
+      "rateNote": "Per excess call",
+      "baseline": 250,
+      "baselineNote": "10 Calls a Day",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -250,
+      "incentive": 0,
+      "floor": 251
+     },
+     {
+      "key": "lifeInsurance",
+      "label": "Life insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh LIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     },
+     {
+      "key": "healthInsurance",
+      "label": "Health insurance",
+      "kind": "money",
+      "payout": "perThousandExcess",
+      "rateNote": "Per Rs 1000 excess premium",
+      "baseline": 10000,
+      "baselineNote": "Fresh GIP/HIP",
+      "credit": 0,
+      "qualified": false,
+      "belowLowest": false,
+      "slab": "Not Qualified",
+      "rate": 0,
+      "excess": -10000,
+      "incentive": 0,
+      "floor": 10000
+     }
+    ],
+    "problems": [],
+    "total": 0,
+    "slabBase": "individual",
+    "slabCtc": 300000
+   },
+   "guard": "",
+   "alerts": [],
+   "confirms": []
+  }
+ ]
+}
