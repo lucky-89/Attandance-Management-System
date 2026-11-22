@@ -14,6 +14,10 @@ import com.finowise.hr.ui.appraisal.AppraisalSettingsScreen
 import com.finowise.hr.ui.attendance.DayDetailScreen
 import com.finowise.hr.ui.attendance.RegularizeScreen
 import com.finowise.hr.ui.auth.LoginScreen
+import com.finowise.hr.ui.auth.CloudAuthScreen
+import com.finowise.hr.ui.auth.JoinScreen
+import com.finowise.hr.ui.auth.LoadingScreen
+import com.finowise.hr.ui.auth.ModeScreen
 import com.finowise.hr.ui.auth.SetupScreen
 import com.finowise.hr.ui.common.MessageDialog
 import com.finowise.hr.ui.home.HomeScreen
@@ -30,9 +34,17 @@ fun AppRoot(vm: AppVm) {
     val data by vm.data.collectAsStateWithLifecycle()
     val userId by vm.userId.collectAsStateWithLifecycle()
     val message by vm.message.collectAsStateWithLifecycle()
+    val needsJoin by vm.needsJoin.collectAsStateWithLifecycle()
     MessageDialog(message) { vm.say(null) }
 
     when {
+        vm.hr.cloud.mode == null || (vm.hr.cloud.mode == "cloud" && !vm.cloud) -> ModeScreen(vm)
+        vm.cloud -> when {
+            userId != null && data.team.any { it.id == userId } -> key(userId) { SignedIn(vm) }
+            userId != null -> LoadingScreen(vm)
+            needsJoin -> JoinScreen(vm)
+            else -> CloudAuthScreen(vm)
+        }
         !vm.service.isSetUp -> SetupScreen(vm)
         userId == null || data.team.none { it.id == userId && it.isActive } -> LoginScreen(vm)
         else -> key(userId) { SignedIn(vm) }

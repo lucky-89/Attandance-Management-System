@@ -53,7 +53,10 @@ class HrService(
     private val persistence: Persistence,
     private val clock: () -> Instant = { Instant.now() },
     val zone: ZoneId = ZoneId.systemDefault(),
+    /** The shared database, or null when the data lives on this device only. */
+    val remote: com.finowise.hr.core.cloud.Remote? = null,
 ) {
+    val cloud: Boolean get() = remote != null
     @Volatile var data: HrData = persistence.load() ?: HrData()
         private set
     private val listeners = mutableListOf<(HrData) -> Unit>()
@@ -61,6 +64,23 @@ class HrService(
     fun removeListener(l: (HrData) -> Unit) { listeners.remove(l) }
 
     fun now(): Instant = clock()
+
+    @Synchronized
+    private fun replace(fresh: HrData) {
+        val next = fresh.copy(auditLog = data.auditLog.takeLast(50))
+        persistence.save(next)
+        data = next
+        listeners.toList().forEach { it(next) }
+    }
+
+    /** Reads everything this person may see from the shared database. */
+    fun refresh(): Outcome {
+        val r = remote ?: return Outcome.ok()
+        return try { replace(r.fetch()); Outcome.ok() }
+        catch (e: Exception) { Outcome.fail(e.message ?: "Could not reach the server.") }
+    }
+
+    fun fetchAudit(): List<AuditEntry> = remote?.fetchAudit() ?: data.auditLog
     fun rules(userId: String?) = HrRules(data, userId, clock(), zone)
     val isSetUp: Boolean get() = data.team.any { it.isAdmin && it.passwordHash.isNotBlank() }
 
@@ -69,6 +89,12 @@ class HrService(
         Guards.attendance(data.hrAttendance, next.hrAttendance)?.let { return it }
         Guards.leave(data.hrLeave, next.hrLeave)?.let { return it }
         Guards.compOff(data.hrCompOff, next.hrCompOff)?.let { return it }
+        remote?.let { r ->
+            r.push(data, next)?.let { refused ->
+                runCatching { replace(r.fetch()) } // put the screen back to what the server holds
+                return refused
+            }
+        }
         persistence.save(next)
         data = next
         listeners.toList().forEach { it(next) }
@@ -145,15 +171,15 @@ class HrService(
         if (e.employeeId.isNotBlank() && data.team.any { it.id != e.id && it.employeeId == e.employeeId }) return Outcome.fail("That Employee ID is already used.")
         if (e.parentUserId == e.id && e.id.isNotBlank()) return Outcome.fail("Somebody cannot report to themselves.")
         val existing = data.team.find { it.id == e.id }
-        if (existing == null && newPassword.isNullOrBlank()) return Outcome.fail("Give the new account a first password.")
-        newPassword?.takeIf { it.isNotBlank() }?.let { pw -> pwProblem(pw)?.let { return Outcome.fail(it) } }
+        if (!cloud && existing == null && newPassword.isNullOrBlank()) return Outcome.fail("Give the new account a first password.")
+        if (!cloud) newPassword?.takeIf { it.isNotBlank() }?.let { pw -> pwProblem(pw)?.let { return Outcome.fail(it) } }
         if (existing != null && existing.isAdmin && (!e.isAdmin || !e.isActive) && data.team.count { it.isAdmin && it.isActive } <= 1)
             return Outcome.fail("This is the only administrator. Make somebody else an administrator first.")
         var rec = e.copy(email = e.email.trim().lowercase(), name = e.name.trim(),
             id = e.id.ifBlank { uid("TM") }, createdAt = existing?.createdAt ?: iso(),
             passwordHash = existing?.passwordHash ?: "", passwordSalt = existing?.passwordSalt ?: "",
             mustChangePassword = existing?.mustChangePassword ?: false)
-        if (!newPassword.isNullOrBlank()) {
+        if (!cloud && !newPassword.isNullOrBlank()) {
             val (h, s) = hashPassword(newPassword)
             rec = rec.copy(passwordHash = h, passwordSalt = s, mustChangePassword = true)
         }
@@ -161,7 +187,9 @@ class HrService(
         val d = audit(data.copy(team = team), byId, rec.id, if (existing == null) "Employee Added" else "Employee Updated",
             "Name" to rec.name, "Role" to rec.role, "Status" to rec.status)
         commit(d)?.let { return Outcome.fail(it) }
-        return Outcome.ok(if (existing == null) "${rec.name} added. They sign in with ${rec.email} and the password you gave." else "Saved.", rec.id)
+        return Outcome.ok(if (existing != null) "Saved." else if (cloud)
+            "${rec.name} added.\n\nThey install the app, tap Create account and sign up with ${rec.email}. Their account is linked to this record automatically."
+            else "${rec.name} added. They sign in with ${rec.email} and the password you gave.", rec.id)
     }
 
     fun saveConfig(byId: String, cfg: HrConfig): Outcome {
@@ -506,6 +534,7 @@ class HrService(
     fun exportJson(): String = JSON.encodeToString(HrData.serializer(), data)
 
     fun importJson(byId: String?, text: String): Outcome {
+        if (cloud) return Outcome.fail("Restoring a backup is for the device-only mode. The shared database keeps every record itself.")
         if (isSetUp && (byId == null || !rules(byId).isHrAdmin())) return Outcome.fail("Only an HR administrator can restore a backup.")
         val incoming = try { JSON.decodeFromString(HrData.serializer(), text) } catch (e: Exception) {
             return Outcome.fail("That file is not a Finowise HR backup (${e.message?.take(120)}).")

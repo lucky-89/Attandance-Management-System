@@ -45,7 +45,8 @@ object Reminders {
 
     fun check(ctx: Context) {
         val app = ctx.applicationContext as HrApp
-        val user = app.session.userId ?: return
+        val user = (if (app.api != null) app.cloud.membership?.employeeId?.takeIf { app.cloud.load() != null } else app.session.userId) ?: return
+        if (app.api != null) app.service.refresh() // best effort; the cached copy is used when offline
         val r = app.service.rules(user)
         val due = r.nudgeDue() ?: return
         val repeatMs = r.cfg.reminders.repeatMinutes.coerceAtLeast(1) * 60_000L

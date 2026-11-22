@@ -13,7 +13,12 @@ android {
         minSdk = 26
         targetSdk = 35
         versionCode = (System.getenv("GITHUB_RUN_NUMBER") ?: "1").toInt()
-        versionName = System.getenv("APP_VERSION") ?: "1.0.0"
+        versionName = System.getenv("APP_VERSION") ?: "1.1.0"
+        // Your Supabase project, baked in at build time (GitHub secrets SUPABASE_URL / SUPABASE_ANON_KEY,
+        // or gradle.properties). Left blank, the app asks for them on first launch.
+        fun cfg(name: String) = (System.getenv(name) ?: (project.findProperty(name) as String?) ?: "").trim()
+        buildConfigField("String", "SUPABASE_URL", "\"${cfg("SUPABASE_URL")}\"")
+        buildConfigField("String", "SUPABASE_ANON_KEY", "\"${cfg("SUPABASE_ANON_KEY")}\"")
     }
 
     buildTypes {
@@ -30,8 +35,8 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions { jvmTarget = "17" }
-    buildFeatures { compose = true }
-    testOptions { unitTests { isIncludeAndroidResources = true; all { it.systemProperty("roborazzi.test.record", "true"); it.systemProperty("robolectric.dependency.repo.url", "https://maven-central.storage-download.googleapis.com/maven2"); it.maxHeapSize = "3g" } } }
+    buildFeatures { compose = true; buildConfig = true }
+    testOptions { unitTests { isIncludeAndroidResources = true; all { it.systemProperty("roborazzi.test.record", "true"); it.systemProperty("robolectric.dependency.repo.url", "https://maven-central.storage-download.googleapis.com/maven2"); it.maxHeapSize = "3g"; it.forkEvery = 1 } } }
     packaging { resources { excludes += "/META-INF/{AL2.0,LGPL2.1}" } }
 }
 

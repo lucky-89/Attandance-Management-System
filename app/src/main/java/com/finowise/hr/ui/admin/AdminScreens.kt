@@ -81,7 +81,11 @@ fun EmployeeEditScreen(vm: AppVm, id: String, onBack: () -> Unit) {
                 SwitchRow(label, on, { v -> e = e.copy(hrAccess = e.hrAccess + (k to if (v) 1 else 0)) }, note)
             }
         }
-        Section(if (existing == null) "First password" else "Set a new password") {
+        if (vm.cloud) Section("Signing in") {
+            Note(if (existing == null) "After you save, they install the app, tap Create account and sign up with the email above. " +
+                "Their account links to this record by itself. Nobody else can claim it."
+                else "They sign in with ${e.email}. If they forget their password, they tap “Forgot password” on the sign-in screen.")
+        } else Section(if (existing == null) "First password" else "Set a new password") {
             Field("Password", pw, { pw = it }, password = true,
                 supporting = if (existing == null) "They sign in with their email and this password." else "Leave blank to keep their current password.")
         }

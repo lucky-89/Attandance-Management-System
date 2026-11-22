@@ -130,6 +130,7 @@ class ScreensTest {
         svc.updateModules(adminId, "Appraisal Seeded", rec.id) { it.copy(hrAppraisals = listOf(recJson), appraisalConfig = sJson) }
 
         val app = ApplicationProvider.getApplicationContext<HrApp>()
+        app.cloud.mode = "local"
         check(app.service.importJson(null, svc.exportJson()).ok)
         app.session.userId = adminId
     }

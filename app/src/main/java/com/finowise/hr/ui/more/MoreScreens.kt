@@ -21,6 +21,11 @@ fun MoreTab(vm: AppVm, nav: NavController, r: HrRules) {
     Section(u.name) {
         Note(u.email + " · " + u.role + (if (u.branch.isNotBlank()) " · " + u.branch else ""))
         Note("HR access: " + com.finowise.hr.core.Grants.ALL.filter { r.has(it.first) }.joinToString(", ") { it.second })
+        val err by vm.syncError.collectAsStateWithLifecycle()
+        if (vm.cloud) Note(if (err == null) "☁ Shared with your team · synced " + r.clock(vm.now.collectAsStateWithLifecycle().value.toString())
+            else "☁ Offline: $err", if (err == null) "ok" else "warn")
+        else Note("📱 Data is kept on this device only.")
+        if (vm.cloud) TextButton(onClick = { vm.launch { vm.sync() } }) { Text("Sync now") }
     }
     Section("HR") {
         ListRow("Notifications", "Requests, decisions and delegations", { nav.navigate("notifications") })
@@ -37,13 +42,15 @@ fun MoreTab(vm: AppVm, nav: NavController, r: HrRules) {
         if (r.moduleOpen("hrincentive")) ListRow("Incentive grid", "Factors, slabs, rates and the task bank", { nav.navigate("incentiveSettings") })
         if (r.moduleOpen("hrappraisal")) ListRow("Appraisal settings", "Role mapping, weights and company growth", { nav.navigate("appraisalSettings") })
         ListRow("Audit log", "Who changed what, and when", { nav.navigate("audit") })
-        ListRow("Backup & restore", "Export all data as JSON, or restore a backup", { nav.navigate("backup") })
+        ListRow(if (vm.cloud) "Export data" else "Backup & restore", if (vm.cloud) "Download everything as one JSON file" else "Export all data as JSON, or restore a backup", { nav.navigate("backup") })
     }
     Section("Account") {
         ListRow("Change password", null, { nav.navigate("password") })
         ListRow("Sign out", null, { vm.signOut() })
+        if (r.isHrAdmin() || !vm.cloud) ListRow("Change mode or server", if (vm.cloud) "Currently: shared through Supabase" else "Currently: this device only",
+            { vm.hr.cloud.mode = null; vm.hr.restart() })
     }
-    Note("Finowise HR 1.0 · all data is stored on this device.")
+    Note("Finowise HR " + com.finowise.hr.BuildConfig.VERSION_NAME)
 }
 
 @Composable
@@ -68,7 +75,9 @@ fun AuditScreen(vm: AppVm, onBack: () -> Unit) {
     Screen("Audit log", onBack = onBack) {
         if (!r.isHrAdmin()) { Empty("For HR administrators."); return@Screen }
         Field("Search", q, { q = it })
-        data.auditLog.asReversed().asSequence()
+        var entries by remember { mutableStateOf(data.auditLog) }
+        LaunchedEffect(Unit) { if (vm.cloud) entries = kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) { runCatching { vm.service.fetchAudit() }.getOrDefault(data.auditLog) } }
+        entries.asReversed().asSequence()
             .filter { a -> q.isBlank() || a.action.contains(q, true) || r.name(a.by).contains(q, true) || a.fields.any { it.newValue.contains(q, true) } }
             .take(300).forEach { a ->
                 ListRow(a.action + " · " + r.name(a.by), Fmt.date(a.at) + " " + r.clock(a.at) + "\n" +
@@ -103,7 +112,7 @@ fun BackupScreen(vm: AppVm, onBack: () -> Unit) {
                 "The record shapes are BOSS's, so the HR stores line up with the web app's.")
             Button(onClick = { save.launch("finowise-hr-backup-${r.today}.json") }, modifier = Modifier.fillMaxWidth()) { Text("Save backup file") }
         }
-        Section("Restore") {
+        if (!vm.cloud) Section("Restore") {
             Note("Replaces everything on this device with the backup. Take a backup first.", "warn")
             RestoreButton(vm)
         }
@@ -121,6 +130,7 @@ fun PasswordScreen(vm: AppVm, onBack: () -> Unit) {
         Field("Repeat new password", n2, { n2 = it }, password = true)
         Button(onClick = {
             if (n1 != n2) vm.say("The two new passwords are different.")
+            else if (vm.cloud) vm.cloudChangePassword(cur, n1) { onBack() }
             else vm.act(onOk = { onBack() }) { vm.service.changePassword(vm.userId.value!!, cur, n1) }
         }, modifier = Modifier.fillMaxWidth()) { Text("Change password") }
         Spacer(Modifier.height(8.dp))
