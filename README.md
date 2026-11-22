@@ -2,9 +2,17 @@
 
 A standalone Android app built from the **HR module of FINOWISE BOSS** (the Attendance,
 Leave, Incentive and Appraisal sections of the web CRM). It does **not** use the BOSS
-server: every record lives on the device, in the same JSON shapes BOSS uses, so a backup
-lines up store-for-store with the web app's `team`, `hrConfig`, `hrAttendance`,
-`hrLeave`, `hrCompOff`, `hrRegularizations`, `hrIncentive` and `hrAppraisals`.
+server. Two modes, chosen on first launch:
+
+- **Share with my team** — everybody signs in on their own phone; the firm's data lives in your own
+  free **Supabase** project (see [`supabase/SETUP.md`](supabase/SETUP.md)). The database enforces the
+  rules the BOSS server enforced: append-only attendance stamped by the server's clock, the punch
+  window, one leave per date, only the approver decides, a decided comp-off is final, and each person
+  reads only what they may.
+- **This device only** — one phone or tablet holds everything, no internet needed.
+
+Records keep the BOSS JSON shapes (`team`, `hrConfig`, `hrAttendance`, `hrLeave`, `hrCompOff`,
+`hrRegularizations`, `hrIncentive`, `hrAppraisals`).
 
 **Install:** download the APK from the repository's **Releases** page on your phone (Android 8.0+), open it and allow "Install unknown apps". On first launch you set up
 the firm and become its administrator, then add your team under More › Employees.
@@ -28,11 +36,11 @@ the firm and become its administrator, then add your team under More › Employe
 
 ### What changed from BOSS because there is no server
 
-- **Server rules run inside the app.** BOSS's append-only attendance guard, one-leave-per-date guard and comp-off guard (`server.js`) now check every write (`core/…/Guards.kt`).
+- **Server rules run in Supabase.** BOSS's attendance, leave and comp-off guards (`server.js`) are Postgres triggers and row-level security in `supabase/schema.sql` (tested by `supabase/test/`), and also run in the app (`core/…/Guards.kt`).
 - **Emails are replaced by in-app notifications.** Leave requests and decisions, regularizations, comp-off and delegation all notify.
 - **Incentive and Appraisal inputs are entered by hand.** BOSS read some figures from its CRM stores (meetings, the task bank, the Business tracker, AUM imports). With no CRM here, sheet lines, task counts and KPI % are typed in. Helpers convert achieved/target into % and opening/closing totals into growth %.
 - **Active/idle time is not measured.** BOSS's browser idle-tracking has no honest phone equivalent. Worked time is still exact from the punches.
-- **Sign-in is local.** Accounts use PBKDF2-hashed passwords; an admin sets new passwords.
+- **Sign-in:** Supabase Auth in shared mode (people create their own account with the email HR added); PBKDF2-hashed local passwords in device-only mode.
 
 ## Project layout
 
@@ -54,7 +62,8 @@ dist/                    built APKs and screenshots
 Needs JDK 17+ and the Android SDK (platform 35). Put `sdk.dir=…` in `local.properties`.
 
 ```bash
-./gradlew :core:test                 # 40 rule tests, incl. oracle tests vs BOSS's own JS
+./gradlew :core:test                 # 45 tests: rules, sync, and oracle tests vs BOSS's own JS
+bash supabase/test/run.sh            # 65 database checks against a local Postgres
 ./gradlew :app:testDebugUnitTest     # renders every main screen on the JVM (Robolectric) → app/build/screens/
 ./gradlew :app:assembleRelease       # app/build/outputs/apk/release/app-release.apk
 ```
